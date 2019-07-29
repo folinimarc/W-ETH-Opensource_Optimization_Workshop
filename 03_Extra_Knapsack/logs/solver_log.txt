@@ -1,0 +1,81 @@
+Solver command line: ['/home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/_Solvers/Ubuntu_Bionic/Cbc-2.9.8/bin/cbc', '-printingOptions', 'all', '-import', '/home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/03_Extra_Knapsack/tmp1qnb5qn8.pyomo.lp', '-stat=1', '-solve', '-solu', '/home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/03_Extra_Knapsack/tmp1qnb5qn8.pyomo.soln']
+
+Welcome to the CBC MILP Solver 
+Version: 2.9.8 
+Build Date: Oct 29 2018 
+Revision Number: 2404 
+
+command line - /home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/_Solvers/Ubuntu_Bionic/Cbc-2.9.8/bin/cbc -printingOptions all -import /home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/03_Extra_Knapsack/tmp1qnb5qn8.pyomo.lp -stat=1 -solve -solu /home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/03_Extra_Knapsack/tmp1qnb5qn8.pyomo.soln (default strategy 1)
+Option for printingOptions changed from normal to all
+ CoinLpIO::readLp(): Maximization problem reformulated as minimization
+Presolve 1 (-1) rows, 4 (-1) columns and 4 (-1) elements
+Statistics for presolved model
+Original problem has 4 integers (4 of which binary)
+Presolved problem has 4 integers (4 of which binary)
+==== 0 zero objective 4 different
+1 variables have objective of -11
+1 variables have objective of -8
+1 variables have objective of -6
+1 variables have objective of -3
+==== absolute objective values 4 different
+1 variables have objective of 3
+1 variables have objective of 6
+1 variables have objective of 8
+1 variables have objective of 11
+==== for integers 0 zero objective 4 different
+1 variables have objective of -11
+1 variables have objective of -8
+1 variables have objective of -6
+1 variables have objective of -3
+==== for integers absolute objective values 4 different
+1 variables have objective of 3
+1 variables have objective of 6
+1 variables have objective of 8
+1 variables have objective of 11
+===== end objective counts
+
+
+Problem has 1 rows, 4 columns (4 with objective) and 4 elements
+There are 4 singletons with objective 
+Column breakdown:
+0 of type 0.0->inf, 0 of type 0.0->up, 0 of type lo->inf, 
+0 of type lo->up, 0 of type free, 0 of type fixed, 
+0 of type -inf->0.0, 0 of type -inf->up, 4 of type 0.0->1.0 
+Row breakdown:
+0 of type E 0.0, 0 of type E 1.0, 0 of type E -1.0, 
+0 of type E other, 0 of type G 0.0, 0 of type G 1.0, 
+0 of type G other, 0 of type L 0.0, 0 of type L 1.0, 
+1 of type L other, 0 of type Range 0.0->1.0, 0 of type Range other, 
+0 of type Free 
+Continuous objective value is -25.8571 - 0.00 seconds
+Cgl0003I 0 fixed, 0 tightened bounds, 1 strengthened rows, 0 substitutions
+Cgl0004I processed model has 1 rows, 4 columns (4 integer (4 of which binary)) and 4 elements
+Cutoff increment increased from 1e-05 to 0.9999
+Cbc0038I Initial state - 0 integers unsatisfied sum - 0
+Cbc0038I Solution found of -25
+Cbc0038I Before mini branch and bound, 4 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.00 seconds)
+Cbc0038I After 0.00 seconds - Feasibility pump exiting with objective of -25 - took 0.00 seconds
+Cbc0012I Integer solution of -25 found by feasibility pump after 0 iterations and 0 nodes (0.00 seconds)
+Cbc0001I Search completed - best objective -25, took 0 iterations and 0 nodes (0.00 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -25 to -25
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                -25.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.00
+Time (Wallclock seconds):       0.01
+
+Total time (CPU seconds):       0.00   (Wallclock seconds):       0.01
+
+

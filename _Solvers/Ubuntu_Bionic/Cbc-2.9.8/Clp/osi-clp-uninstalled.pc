@@ -1,0 +1,10 @@
+prefix=/home/mf/Cbc-2.9.8
+libdir=/home/mf/Cbc-2.9.8/Clp/src/OsiClp
+
+Name: OsiClp
+Description: COIN-OR Open Solver Interface for CLP
+URL: https://projects.coin-or.org/Osi
+Version: 1.16.10
+Libs: ${libdir}/libOsiClp.la 
+Cflags: -I/home/mf/Cbc-2.9.8/Clp/src/OsiClp
+Requires: clp osi 

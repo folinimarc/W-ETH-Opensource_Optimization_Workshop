@@ -1,0 +1,211 @@
+Solver command line: ['C:\\Users\\mfolini\\Dropbox\\DATA\\Arbeit\\ETH\\Opensource_Optimization_Workshop\\_Solvers\\Cbc-2.9.9-win32-msvc14\\bin\\cbc.exe', '-printingOptions', 'all', '-import', 'C:\\Users\\mfolini\\Dropbox\\DATA\\Arbeit\\ETH\\Opensource_Optimization_Workshop\\07_Extra_Hexagon\\tmpilzhf3nf.pyomo.lp', '-stat=1', '-solve', '-solu', 'C:\\Users\\mfolini\\Dropbox\\DATA\\Arbeit\\ETH\\Opensource_Optimization_Workshop\\07_Extra_Hexagon\\tmpilzhf3nf.pyomo.soln']
+
+Welcome to the CBC MILP Solver 
+
+Version: 2.9.9 
+
+Build Date: Jun 12 2017 
+
+
+
+command line - C:\Users\mfolini\Dropbox\DATA\Arbeit\ETH\Opensource_Optimization_Workshop\_Solvers\Cbc-2.9.9-win32-msvc14\bin\cbc.exe -printingOptions all -import C:\Users\mfolini\Dropbox\DATA\Arbeit\ETH\Opensource_Optimization_Workshop\07_Extra_Hexagon\tmpilzhf3nf.pyomo.lp -stat=1 -solve -solu C:\Users\mfolini\Dropbox\DATA\Arbeit\ETH\Opensource_Optimization_Workshop\07_Extra_Hexagon\tmpilzhf3nf.pyomo.soln (default strategy 1)
+
+Option for printingOptions changed from normal to all
+
+ CoinLpIO::readLp(): Maximization problem reformulated as minimization
+
+Presolve 23 (-1) rows, 63 (-1) columns and 405 (-1) elements
+
+Statistics for presolved model
+
+Original problem has 63 integers (63 of which binary)
+
+Presolved problem has 63 integers (63 of which binary)
+
+==== 0 zero objective 1 different
+
+63 variables have objective of -1
+
+==== absolute objective values 1 different
+
+63 variables have objective of 1
+
+==== for integers 0 zero objective 1 different
+
+63 variables have objective of -1
+
+==== for integers absolute objective values 1 different
+
+63 variables have objective of 1
+
+===== end objective counts
+
+
+
+
+
+Problem has 23 rows, 63 columns (63 with objective) and 405 elements
+
+Column breakdown:
+
+0 of type 0.0->inf, 0 of type 0.0->up, 0 of type lo->inf, 
+
+0 of type lo->up, 0 of type free, 0 of type fixed, 
+
+0 of type -inf->0.0, 0 of type -inf->up, 63 of type 0.0->1.0 
+
+Row breakdown:
+
+1 of type E 0.0, 7 of type E 1.0, 0 of type E -1.0, 
+
+6 of type E other, 0 of type G 0.0, 0 of type G 1.0, 
+
+0 of type G other, 0 of type L 0.0, 9 of type L 1.0, 
+
+0 of type L other, 0 of type Range 0.0->1.0, 0 of type Range other, 
+
+0 of type Free 
+
+Continuous objective value is -7 - 0.00 seconds
+
+Cgl0004I processed model has 23 rows, 63 columns (63 integer (63 of which binary)) and 405 elements
+
+Cutoff increment increased from 1e-05 to 0.9999
+
+Cbc0038I Initial state - 14 integers unsatisfied sum - 3.14724
+
+Cbc0038I Pass   1: suminf.    1.76623 (10) obj. -7 iterations 12
+
+Cbc0038I Pass   2: suminf.    3.39038 (10) obj. -7 iterations 12
+
+Cbc0038I Pass   3: suminf.    2.65242 (10) obj. -7 iterations 7
+
+Cbc0038I Pass   4: suminf.    2.31321 (10) obj. -7 iterations 11
+
+Cbc0038I Pass   5: suminf.    2.03071 (10) obj. -7 iterations 5
+
+Cbc0038I Pass   6: suminf.    3.16207 (10) obj. -7 iterations 12
+
+Cbc0038I Pass   7: suminf.    2.24564 (10) obj. -7 iterations 8
+
+Cbc0038I Pass   8: suminf.    2.45339 (10) obj. -7 iterations 11
+
+Cbc0038I Pass   9: suminf.    2.05739 (10) obj. -7 iterations 7
+
+Cbc0038I Pass  10: suminf.    2.17157 (10) obj. -7 iterations 10
+
+Cbc0038I Pass  11: suminf.    2.05739 (10) obj. -7 iterations 8
+
+Cbc0038I Pass  12: suminf.    3.16207 (10) obj. -7 iterations 14
+
+Cbc0038I Pass  13: suminf.    2.24564 (10) obj. -7 iterations 8
+
+Cbc0038I Pass  14: suminf.    2.45339 (10) obj. -7 iterations 12
+
+Cbc0038I Pass  15: suminf.    4.34655 (14) obj. -7 iterations 11
+
+Cbc0038I Pass  16: suminf.    2.41072 (10) obj. -7 iterations 10
+
+Cbc0038I Pass  17: suminf.    1.78144 (10) obj. -7 iterations 4
+
+Cbc0038I Pass  18: suminf.    2.51902 (12) obj. -7 iterations 11
+
+Cbc0038I Pass  19: suminf.    2.41231 (10) obj. -7 iterations 3
+
+Cbc0038I Pass  20: suminf.    2.78029 (10) obj. -7 iterations 12
+
+Cbc0038I Pass  21: suminf.    2.05994 (7) obj. -7 iterations 22
+
+Cbc0038I Pass  22: suminf.    1.40193 (7) obj. -7 iterations 9
+
+Cbc0038I Pass  23: suminf.    1.67733 (10) obj. -7 iterations 13
+
+Cbc0038I Pass  24: suminf.    1.64714 (10) obj. -7 iterations 12
+
+Cbc0038I Pass  25: suminf.    3.79922 (10) obj. -7 iterations 10
+
+Cbc0038I Pass  26: suminf.    2.76589 (10) obj. -7 iterations 7
+
+Cbc0038I Pass  27: suminf.    1.65744 (10) obj. -7 iterations 11
+
+Cbc0038I Pass  28: suminf.    2.45664 (15) obj. -7 iterations 16
+
+Cbc0038I Pass  29: suminf.    1.75513 (13) obj. -7 iterations 12
+
+Cbc0038I Pass  30: suminf.    2.58468 (13) obj. -7 iterations 13
+
+Cbc0038I No solution found this major pass
+
+Cbc0038I Before mini branch and bound, 17 integers at bound fixed and 0 continuous
+
+Cbc0038I Full problem 23 rows 63 columns, reduced to 22 rows 46 columns
+
+Cbc0038I Mini branch and bound did not improve solution (0.04 seconds)
+
+Cbc0038I Full problem 24 rows 63 columns, reduced to 24 rows 63 columns
+
+Cbc0038I After 0.06 seconds - Feasibility pump exiting with objective of -7 - took 0.05 seconds
+
+Cbc0012I Integer solution of -7 found by DiveCoefficient after 154 iterations and 0 nodes (0.11 seconds)
+
+Cbc0031I 3 added rows had average density of 42.333333
+
+Cbc0013I At root node, 3 cuts changed objective from -7 to -7 in 9 passes
+
+Cbc0014I Cut generator 0 (Probing) - 6 row cuts average 8.0 elements, 1 column cuts (1 active)  in 0.003 seconds - new frequency is -100
+
+Cbc0014I Cut generator 1 (Gomory) - 77 row cuts average 48.1 elements, 0 column cuts (0 active)  in 0.008 seconds - new frequency is -100
+
+Cbc0014I Cut generator 2 (Knapsack) - 39 row cuts average 19.3 elements, 0 column cuts (0 active)  in 0.011 seconds - new frequency is -100
+
+Cbc0014I Cut generator 3 (Clique) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.001 seconds - new frequency is -100
+
+Cbc0014I Cut generator 4 (MixedIntegerRounding2) - 2 row cuts average 37.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+
+Cbc0014I Cut generator 5 (FlowCover) - 0 row cuts average 0.0 elements, 0 column cuts (0 active)  in 0.000 seconds - new frequency is -100
+
+Cbc0014I Cut generator 6 (TwoMirCuts) - 111 row cuts average 37.6 elements, 0 column cuts (0 active)  in 0.012 seconds - new frequency is -100
+
+Cbc0001I Search completed - best objective -7, took 154 iterations and 0 nodes (0.11 seconds)
+
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+
+Cuts at root node changed objective from -7 to -7
+
+Probing was tried 9 times and created 7 cuts of which 0 were active after adding rounds of cuts (0.003 seconds)
+
+Gomory was tried 9 times and created 77 cuts of which 0 were active after adding rounds of cuts (0.008 seconds)
+
+Knapsack was tried 9 times and created 39 cuts of which 0 were active after adding rounds of cuts (0.011 seconds)
+
+Clique was tried 9 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.001 seconds)
+
+MixedIntegerRounding2 was tried 9 times and created 2 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+FlowCover was tried 9 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+TwoMirCuts was tried 9 times and created 111 cuts of which 0 were active after adding rounds of cuts (0.012 seconds)
+
+
+
+Result - Optimal solution found
+
+
+
+Objective value:                -7.00000000
+
+Enumerated nodes:               0
+
+Total iterations:               154
+
+Time (CPU seconds):             0.12
+
+Time (Wallclock seconds):       0.12
+
+
+
+Total time (CPU seconds):       0.12   (Wallclock seconds):       0.12
+
+
+
+

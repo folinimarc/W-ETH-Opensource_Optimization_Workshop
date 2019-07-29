@@ -1,0 +1,1533 @@
+3 Set Declarations
+    D : Dim=0, Dimen=1, Size=745, Domain=None, Ordered=False, Bounds=(0, 744)
+        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744]
+    F : Dim=0, Dimen=1, Size=16, Domain=None, Ordered=False, Bounds=(0, 15)
+        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+    c_coverage_index : Dim=0, Dimen=1, Size=745, Domain=None, Ordered=False, Bounds=None
+        [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745]
+
+2 Var Declarations
+    X : Size=16, Index=F
+        Key : Lower : Value : Upper : Fixed : Stale : Domain
+          0 :     0 :     0 :     1 : False : False : Binary
+          1 :     0 :     0 :     1 : False : False : Binary
+          2 :     0 :     0 :     1 : False : False : Binary
+          3 :     0 :     0 :     1 : False : False : Binary
+          4 :     0 :     0 :     1 : False : False : Binary
+          5 :     0 :     0 :     1 : False : False : Binary
+          6 :     0 :     0 :     1 : False : False : Binary
+          7 :     0 :     0 :     1 : False : False : Binary
+          8 :     0 :     0 :     1 : False : False : Binary
+          9 :     0 :     0 :     1 : False : False : Binary
+         10 :     0 :     0 :     1 : False : False : Binary
+         11 :     0 :     0 :     1 : False : False : Binary
+         12 :     0 :     0 :     1 : False : False : Binary
+         13 :     0 :     0 :     1 : False : False : Binary
+         14 :     0 :     0 :     1 : False : False : Binary
+         15 :     0 :     0 :     1 : False : False : Binary
+    Y : Size=745, Index=D
+        Key : Lower : Value : Upper : Fixed : Stale : Domain
+          0 :     0 :     0 :     1 : False : False : Binary
+          1 :     0 :     0 :     1 : False : False : Binary
+          2 :     0 :     0 :     1 : False : False : Binary
+          3 :     0 :     0 :     1 : False : False : Binary
+          4 :     0 :     0 :     1 : False : False : Binary
+          5 :     0 :     0 :     1 : False : False : Binary
+          6 :     0 :     0 :     1 : False : False : Binary
+          7 :     0 :     0 :     1 : False : False : Binary
+          8 :     0 :     0 :     1 : False : False : Binary
+          9 :     0 :     0 :     1 : False : False : Binary
+         10 :     0 :     0 :     1 : False : False : Binary
+         11 :     0 :     0 :     1 : False : False : Binary
+         12 :     0 :     0 :     1 : False : False : Binary
+         13 :     0 :     0 :     1 : False : False : Binary
+         14 :     0 :     0 :     1 : False : False : Binary
+         15 :     0 :     0 :     1 : False : False : Binary
+         16 :     0 :     0 :     1 : False : False : Binary
+         17 :     0 :     0 :     1 : False : False : Binary
+         18 :     0 :     0 :     1 : False : False : Binary
+         19 :     0 :     0 :     1 : False : False : Binary
+         20 :     0 :     0 :     1 : False : False : Binary
+         21 :     0 :     0 :     1 : False : False : Binary
+         22 :     0 :     0 :     1 : False : False : Binary
+         23 :     0 :     0 :     1 : False : False : Binary
+         24 :     0 :     0 :     1 : False : False : Binary
+         25 :     0 :     0 :     1 : False : False : Binary
+         26 :     0 :     0 :     1 : False : False : Binary
+         27 :     0 :     0 :     1 : False : False : Binary
+         28 :     0 :     0 :     1 : False : False : Binary
+         29 :     0 :     0 :     1 : False : False : Binary
+         30 :     0 :     0 :     1 : False : False : Binary
+         31 :     0 :     0 :     1 : False : False : Binary
+         32 :     0 :     0 :     1 : False : False : Binary
+         33 :     0 :     0 :     1 : False : False : Binary
+         34 :     0 :     0 :     1 : False : False : Binary
+         35 :     0 :     0 :     1 : False : False : Binary
+         36 :     0 :     0 :     1 : False : False : Binary
+         37 :     0 :     0 :     1 : False : False : Binary
+         38 :     0 :     0 :     1 : False : False : Binary
+         39 :     0 :     0 :     1 : False : False : Binary
+         40 :     0 :     0 :     1 : False : False : Binary
+         41 :     0 :     0 :     1 : False : False : Binary
+         42 :     0 :     0 :     1 : False : False : Binary
+         43 :     0 :     0 :     1 : False : False : Binary
+         44 :     0 :     0 :     1 : False : False : Binary
+         45 :     0 :     0 :     1 : False : False : Binary
+         46 :     0 :     0 :     1 : False : False : Binary
+         47 :     0 :     0 :     1 : False : False : Binary
+         48 :     0 :     0 :     1 : False : False : Binary
+         49 :     0 :     0 :     1 : False : False : Binary
+         50 :     0 :     0 :     1 : False : False : Binary
+         51 :     0 :     0 :     1 : False : False : Binary
+         52 :     0 :     0 :     1 : False : False : Binary
+         53 :     0 :     0 :     1 : False : False : Binary
+         54 :     0 :     0 :     1 : False : False : Binary
+         55 :     0 :     0 :     1 : False : False : Binary
+         56 :     0 :     0 :     1 : False : False : Binary
+         57 :     0 :     0 :     1 : False : False : Binary
+         58 :     0 :     0 :     1 : False : False : Binary
+         59 :     0 :     0 :     1 : False : False : Binary
+         60 :     0 :     0 :     1 : False : False : Binary
+         61 :     0 :     0 :     1 : False : False : Binary
+         62 :     0 :     0 :     1 : False : False : Binary
+         63 :     0 :     0 :     1 : False : False : Binary
+         64 :     0 :     0 :     1 : False : False : Binary
+         65 :     0 :     0 :     1 : False : False : Binary
+         66 :     0 :     0 :     1 : False : False : Binary
+         67 :     0 :     0 :     1 : False : False : Binary
+         68 :     0 :     0 :     1 : False : False : Binary
+         69 :     0 :     0 :     1 : False : False : Binary
+         70 :     0 :     0 :     1 : False : False : Binary
+         71 :     0 :     0 :     1 : False : False : Binary
+         72 :     0 :     0 :     1 : False : False : Binary
+         73 :     0 :     0 :     1 : False : False : Binary
+         74 :     0 :     0 :     1 : False : False : Binary
+         75 :     0 :     0 :     1 : False : False : Binary
+         76 :     0 :     0 :     1 : False : False : Binary
+         77 :     0 :     0 :     1 : False : False : Binary
+         78 :     0 :     0 :     1 : False : False : Binary
+         79 :     0 :     0 :     1 : False : False : Binary
+         80 :     0 :     0 :     1 : False : False : Binary
+         81 :     0 :     0 :     1 : False : False : Binary
+         82 :     0 :     0 :     1 : False : False : Binary
+         83 :     0 :     0 :     1 : False : False : Binary
+         84 :     0 :     0 :     1 : False : False : Binary
+         85 :     0 :     0 :     1 : False : False : Binary
+         86 :     0 :     0 :     1 : False : False : Binary
+         87 :     0 :     0 :     1 : False : False : Binary
+         88 :     0 :     0 :     1 : False : False : Binary
+         89 :     0 :     0 :     1 : False : False : Binary
+         90 :     0 :     0 :     1 : False : False : Binary
+         91 :     0 :     0 :     1 : False : False : Binary
+         92 :     0 :     0 :     1 : False : False : Binary
+         93 :     0 :     0 :     1 : False : False : Binary
+         94 :     0 :     0 :     1 : False : False : Binary
+         95 :     0 :     0 :     1 : False : False : Binary
+         96 :     0 :     0 :     1 : False : False : Binary
+         97 :     0 :     0 :     1 : False : False : Binary
+         98 :     0 :     0 :     1 : False : False : Binary
+         99 :     0 :     0 :     1 : False : False : Binary
+        100 :     0 :     0 :     1 : False : False : Binary
+        101 :     0 :     0 :     1 : False : False : Binary
+        102 :     0 :     0 :     1 : False : False : Binary
+        103 :     0 :     0 :     1 : False : False : Binary
+        104 :     0 :     0 :     1 : False : False : Binary
+        105 :     0 :     0 :     1 : False : False : Binary
+        106 :     0 :     0 :     1 : False : False : Binary
+        107 :     0 :     0 :     1 : False : False : Binary
+        108 :     0 :     0 :     1 : False : False : Binary
+        109 :     0 :     0 :     1 : False : False : Binary
+        110 :     0 :     0 :     1 : False : False : Binary
+        111 :     0 :     0 :     1 : False : False : Binary
+        112 :     0 :     0 :     1 : False : False : Binary
+        113 :     0 :     0 :     1 : False : False : Binary
+        114 :     0 :     0 :     1 : False : False : Binary
+        115 :     0 :     0 :     1 : False : False : Binary
+        116 :     0 :     0 :     1 : False : False : Binary
+        117 :     0 :     0 :     1 : False : False : Binary
+        118 :     0 :     0 :     1 : False : False : Binary
+        119 :     0 :     0 :     1 : False : False : Binary
+        120 :     0 :     0 :     1 : False : False : Binary
+        121 :     0 :     0 :     1 : False : False : Binary
+        122 :     0 :     0 :     1 : False : False : Binary
+        123 :     0 :     0 :     1 : False : False : Binary
+        124 :     0 :     0 :     1 : False : False : Binary
+        125 :     0 :     0 :     1 : False : False : Binary
+        126 :     0 :     0 :     1 : False : False : Binary
+        127 :     0 :     0 :     1 : False : False : Binary
+        128 :     0 :     0 :     1 : False : False : Binary
+        129 :     0 :     0 :     1 : False : False : Binary
+        130 :     0 :     0 :     1 : False : False : Binary
+        131 :     0 :     0 :     1 : False : False : Binary
+        132 :     0 :     0 :     1 : False : False : Binary
+        133 :     0 :     0 :     1 : False : False : Binary
+        134 :     0 :     0 :     1 : False : False : Binary
+        135 :     0 :     0 :     1 : False : False : Binary
+        136 :     0 :     0 :     1 : False : False : Binary
+        137 :     0 :     0 :     1 : False : False : Binary
+        138 :     0 :     0 :     1 : False : False : Binary
+        139 :     0 :     0 :     1 : False : False : Binary
+        140 :     0 :     0 :     1 : False : False : Binary
+        141 :     0 :     0 :     1 : False : False : Binary
+        142 :     0 :     0 :     1 : False : False : Binary
+        143 :     0 :     0 :     1 : False : False : Binary
+        144 :     0 :     0 :     1 : False : False : Binary
+        145 :     0 :     0 :     1 : False : False : Binary
+        146 :     0 :     0 :     1 : False : False : Binary
+        147 :     0 :     0 :     1 : False : False : Binary
+        148 :     0 :     0 :     1 : False : False : Binary
+        149 :     0 :     0 :     1 : False : False : Binary
+        150 :     0 :     0 :     1 : False : False : Binary
+        151 :     0 :     0 :     1 : False : False : Binary
+        152 :     0 :     0 :     1 : False : False : Binary
+        153 :     0 :     0 :     1 : False : False : Binary
+        154 :     0 :     0 :     1 : False : False : Binary
+        155 :     0 :     0 :     1 : False : False : Binary
+        156 :     0 :     0 :     1 : False : False : Binary
+        157 :     0 :     0 :     1 : False : False : Binary
+        158 :     0 :     0 :     1 : False : False : Binary
+        159 :     0 :     0 :     1 : False : False : Binary
+        160 :     0 :     0 :     1 : False : False : Binary
+        161 :     0 :     0 :     1 : False : False : Binary
+        162 :     0 :     0 :     1 : False : False : Binary
+        163 :     0 :     0 :     1 : False : False : Binary
+        164 :     0 :     0 :     1 : False : False : Binary
+        165 :     0 :     0 :     1 : False : False : Binary
+        166 :     0 :     0 :     1 : False : False : Binary
+        167 :     0 :     0 :     1 : False : False : Binary
+        168 :     0 :     0 :     1 : False : False : Binary
+        169 :     0 :     0 :     1 : False : False : Binary
+        170 :     0 :     0 :     1 : False : False : Binary
+        171 :     0 :     0 :     1 : False : False : Binary
+        172 :     0 :     0 :     1 : False : False : Binary
+        173 :     0 :     0 :     1 : False : False : Binary
+        174 :     0 :     0 :     1 : False : False : Binary
+        175 :     0 :     0 :     1 : False : False : Binary
+        176 :     0 :     0 :     1 : False : False : Binary
+        177 :     0 :     0 :     1 : False : False : Binary
+        178 :     0 :     0 :     1 : False : False : Binary
+        179 :     0 :     0 :     1 : False : False : Binary
+        180 :     0 :     0 :     1 : False : False : Binary
+        181 :     0 :     0 :     1 : False : False : Binary
+        182 :     0 :     0 :     1 : False : False : Binary
+        183 :     0 :     0 :     1 : False : False : Binary
+        184 :     0 :     0 :     1 : False : False : Binary
+        185 :     0 :     0 :     1 : False : False : Binary
+        186 :     0 :     0 :     1 : False : False : Binary
+        187 :     0 :     0 :     1 : False : False : Binary
+        188 :     0 :     0 :     1 : False : False : Binary
+        189 :     0 :     0 :     1 : False : False : Binary
+        190 :     0 :     0 :     1 : False : False : Binary
+        191 :     0 :     0 :     1 : False : False : Binary
+        192 :     0 :     0 :     1 : False : False : Binary
+        193 :     0 :     0 :     1 : False : False : Binary
+        194 :     0 :     0 :     1 : False : False : Binary
+        195 :     0 :     0 :     1 : False : False : Binary
+        196 :     0 :     0 :     1 : False : False : Binary
+        197 :     0 :     0 :     1 : False : False : Binary
+        198 :     0 :     0 :     1 : False : False : Binary
+        199 :     0 :     0 :     1 : False : False : Binary
+        200 :     0 :     0 :     1 : False : False : Binary
+        201 :     0 :     0 :     1 : False : False : Binary
+        202 :     0 :     0 :     1 : False : False : Binary
+        203 :     0 :     0 :     1 : False : False : Binary
+        204 :     0 :     0 :     1 : False : False : Binary
+        205 :     0 :     0 :     1 : False : False : Binary
+        206 :     0 :     0 :     1 : False : False : Binary
+        207 :     0 :     0 :     1 : False : False : Binary
+        208 :     0 :     0 :     1 : False : False : Binary
+        209 :     0 :     0 :     1 : False : False : Binary
+        210 :     0 :     0 :     1 : False : False : Binary
+        211 :     0 :     0 :     1 : False : False : Binary
+        212 :     0 :     0 :     1 : False : False : Binary
+        213 :     0 :     0 :     1 : False : False : Binary
+        214 :     0 :     0 :     1 : False : False : Binary
+        215 :     0 :     0 :     1 : False : False : Binary
+        216 :     0 :     0 :     1 : False : False : Binary
+        217 :     0 :     0 :     1 : False : False : Binary
+        218 :     0 :     0 :     1 : False : False : Binary
+        219 :     0 :     0 :     1 : False : False : Binary
+        220 :     0 :     0 :     1 : False : False : Binary
+        221 :     0 :     0 :     1 : False : False : Binary
+        222 :     0 :     0 :     1 : False : False : Binary
+        223 :     0 :     0 :     1 : False : False : Binary
+        224 :     0 :     0 :     1 : False : False : Binary
+        225 :     0 :     0 :     1 : False : False : Binary
+        226 :     0 :     0 :     1 : False : False : Binary
+        227 :     0 :     0 :     1 : False : False : Binary
+        228 :     0 :     0 :     1 : False : False : Binary
+        229 :     0 :     0 :     1 : False : False : Binary
+        230 :     0 :     0 :     1 : False : False : Binary
+        231 :     0 :     0 :     1 : False : False : Binary
+        232 :     0 :     0 :     1 : False : False : Binary
+        233 :     0 :     0 :     1 : False : False : Binary
+        234 :     0 :     0 :     1 : False : False : Binary
+        235 :     0 :     0 :     1 : False : False : Binary
+        236 :     0 :     0 :     1 : False : False : Binary
+        237 :     0 :     0 :     1 : False : False : Binary
+        238 :     0 :     0 :     1 : False : False : Binary
+        239 :     0 :     0 :     1 : False : False : Binary
+        240 :     0 :     0 :     1 : False : False : Binary
+        241 :     0 :     0 :     1 : False : False : Binary
+        242 :     0 :     0 :     1 : False : False : Binary
+        243 :     0 :     0 :     1 : False : False : Binary
+        244 :     0 :     0 :     1 : False : False : Binary
+        245 :     0 :     0 :     1 : False : False : Binary
+        246 :     0 :     0 :     1 : False : False : Binary
+        247 :     0 :     0 :     1 : False : False : Binary
+        248 :     0 :     0 :     1 : False : False : Binary
+        249 :     0 :     0 :     1 : False : False : Binary
+        250 :     0 :     0 :     1 : False : False : Binary
+        251 :     0 :     0 :     1 : False : False : Binary
+        252 :     0 :     0 :     1 : False : False : Binary
+        253 :     0 :     0 :     1 : False : False : Binary
+        254 :     0 :     0 :     1 : False : False : Binary
+        255 :     0 :     0 :     1 : False : False : Binary
+        256 :     0 :     0 :     1 : False : False : Binary
+        257 :     0 :     0 :     1 : False : False : Binary
+        258 :     0 :     0 :     1 : False : False : Binary
+        259 :     0 :     0 :     1 : False : False : Binary
+        260 :     0 :     0 :     1 : False : False : Binary
+        261 :     0 :     0 :     1 : False : False : Binary
+        262 :     0 :     0 :     1 : False : False : Binary
+        263 :     0 :     0 :     1 : False : False : Binary
+        264 :     0 :     0 :     1 : False : False : Binary
+        265 :     0 :     0 :     1 : False : False : Binary
+        266 :     0 :     0 :     1 : False : False : Binary
+        267 :     0 :     0 :     1 : False : False : Binary
+        268 :     0 :     0 :     1 : False : False : Binary
+        269 :     0 :     0 :     1 : False : False : Binary
+        270 :     0 :     0 :     1 : False : False : Binary
+        271 :     0 :     0 :     1 : False : False : Binary
+        272 :     0 :     0 :     1 : False : False : Binary
+        273 :     0 :     0 :     1 : False : False : Binary
+        274 :     0 :     0 :     1 : False : False : Binary
+        275 :     0 :     0 :     1 : False : False : Binary
+        276 :     0 :     0 :     1 : False : False : Binary
+        277 :     0 :     0 :     1 : False : False : Binary
+        278 :     0 :     0 :     1 : False : False : Binary
+        279 :     0 :     0 :     1 : False : False : Binary
+        280 :     0 :     0 :     1 : False : False : Binary
+        281 :     0 :     0 :     1 : False : False : Binary
+        282 :     0 :     0 :     1 : False : False : Binary
+        283 :     0 :     0 :     1 : False : False : Binary
+        284 :     0 :     0 :     1 : False : False : Binary
+        285 :     0 :     0 :     1 : False : False : Binary
+        286 :     0 :     0 :     1 : False : False : Binary
+        287 :     0 :     0 :     1 : False : False : Binary
+        288 :     0 :     0 :     1 : False : False : Binary
+        289 :     0 :     0 :     1 : False : False : Binary
+        290 :     0 :     0 :     1 : False : False : Binary
+        291 :     0 :     0 :     1 : False : False : Binary
+        292 :     0 :     0 :     1 : False : False : Binary
+        293 :     0 :     0 :     1 : False : False : Binary
+        294 :     0 :     0 :     1 : False : False : Binary
+        295 :     0 :     0 :     1 : False : False : Binary
+        296 :     0 :     0 :     1 : False : False : Binary
+        297 :     0 :     0 :     1 : False : False : Binary
+        298 :     0 :     0 :     1 : False : False : Binary
+        299 :     0 :     0 :     1 : False : False : Binary
+        300 :     0 :     0 :     1 : False : False : Binary
+        301 :     0 :     0 :     1 : False : False : Binary
+        302 :     0 :     0 :     1 : False : False : Binary
+        303 :     0 :     0 :     1 : False : False : Binary
+        304 :     0 :     0 :     1 : False : False : Binary
+        305 :     0 :     0 :     1 : False : False : Binary
+        306 :     0 :     0 :     1 : False : False : Binary
+        307 :     0 :     0 :     1 : False : False : Binary
+        308 :     0 :     0 :     1 : False : False : Binary
+        309 :     0 :     0 :     1 : False : False : Binary
+        310 :     0 :     0 :     1 : False : False : Binary
+        311 :     0 :     0 :     1 : False : False : Binary
+        312 :     0 :     0 :     1 : False : False : Binary
+        313 :     0 :     0 :     1 : False : False : Binary
+        314 :     0 :     0 :     1 : False : False : Binary
+        315 :     0 :     0 :     1 : False : False : Binary
+        316 :     0 :     0 :     1 : False : False : Binary
+        317 :     0 :     0 :     1 : False : False : Binary
+        318 :     0 :     0 :     1 : False : False : Binary
+        319 :     0 :     0 :     1 : False : False : Binary
+        320 :     0 :     0 :     1 : False : False : Binary
+        321 :     0 :     0 :     1 : False : False : Binary
+        322 :     0 :     0 :     1 : False : False : Binary
+        323 :     0 :     0 :     1 : False : False : Binary
+        324 :     0 :     0 :     1 : False : False : Binary
+        325 :     0 :     0 :     1 : False : False : Binary
+        326 :     0 :     0 :     1 : False : False : Binary
+        327 :     0 :     0 :     1 : False : False : Binary
+        328 :     0 :     0 :     1 : False : False : Binary
+        329 :     0 :     0 :     1 : False : False : Binary
+        330 :     0 :     0 :     1 : False : False : Binary
+        331 :     0 :     0 :     1 : False : False : Binary
+        332 :     0 :     0 :     1 : False : False : Binary
+        333 :     0 :     0 :     1 : False : False : Binary
+        334 :     0 :     0 :     1 : False : False : Binary
+        335 :     0 :     0 :     1 : False : False : Binary
+        336 :     0 :     0 :     1 : False : False : Binary
+        337 :     0 :     0 :     1 : False : False : Binary
+        338 :     0 :     0 :     1 : False : False : Binary
+        339 :     0 :     0 :     1 : False : False : Binary
+        340 :     0 :     0 :     1 : False : False : Binary
+        341 :     0 :     0 :     1 : False : False : Binary
+        342 :     0 :     0 :     1 : False : False : Binary
+        343 :     0 :     0 :     1 : False : False : Binary
+        344 :     0 :     0 :     1 : False : False : Binary
+        345 :     0 :     0 :     1 : False : False : Binary
+        346 :     0 :     0 :     1 : False : False : Binary
+        347 :     0 :     0 :     1 : False : False : Binary
+        348 :     0 :     0 :     1 : False : False : Binary
+        349 :     0 :     0 :     1 : False : False : Binary
+        350 :     0 :     0 :     1 : False : False : Binary
+        351 :     0 :     0 :     1 : False : False : Binary
+        352 :     0 :     0 :     1 : False : False : Binary
+        353 :     0 :     0 :     1 : False : False : Binary
+        354 :     0 :     0 :     1 : False : False : Binary
+        355 :     0 :     0 :     1 : False : False : Binary
+        356 :     0 :     0 :     1 : False : False : Binary
+        357 :     0 :     0 :     1 : False : False : Binary
+        358 :     0 :     0 :     1 : False : False : Binary
+        359 :     0 :     0 :     1 : False : False : Binary
+        360 :     0 :     0 :     1 : False : False : Binary
+        361 :     0 :     0 :     1 : False : False : Binary
+        362 :     0 :     0 :     1 : False : False : Binary
+        363 :     0 :     0 :     1 : False : False : Binary
+        364 :     0 :     0 :     1 : False : False : Binary
+        365 :     0 :     0 :     1 : False : False : Binary
+        366 :     0 :     0 :     1 : False : False : Binary
+        367 :     0 :     0 :     1 : False : False : Binary
+        368 :     0 :     0 :     1 : False : False : Binary
+        369 :     0 :     0 :     1 : False : False : Binary
+        370 :     0 :     0 :     1 : False : False : Binary
+        371 :     0 :     0 :     1 : False : False : Binary
+        372 :     0 :     0 :     1 : False : False : Binary
+        373 :     0 :     0 :     1 : False : False : Binary
+        374 :     0 :     0 :     1 : False : False : Binary
+        375 :     0 :     0 :     1 : False : False : Binary
+        376 :     0 :     0 :     1 : False : False : Binary
+        377 :     0 :     0 :     1 : False : False : Binary
+        378 :     0 :     0 :     1 : False : False : Binary
+        379 :     0 :     0 :     1 : False : False : Binary
+        380 :     0 :     0 :     1 : False : False : Binary
+        381 :     0 :     0 :     1 : False : False : Binary
+        382 :     0 :     0 :     1 : False : False : Binary
+        383 :     0 :     0 :     1 : False : False : Binary
+        384 :     0 :     0 :     1 : False : False : Binary
+        385 :     0 :     0 :     1 : False : False : Binary
+        386 :     0 :     0 :     1 : False : False : Binary
+        387 :     0 :     0 :     1 : False : False : Binary
+        388 :     0 :     0 :     1 : False : False : Binary
+        389 :     0 :     0 :     1 : False : False : Binary
+        390 :     0 :     0 :     1 : False : False : Binary
+        391 :     0 :     0 :     1 : False : False : Binary
+        392 :     0 :     0 :     1 : False : False : Binary
+        393 :     0 :     0 :     1 : False : False : Binary
+        394 :     0 :     0 :     1 : False : False : Binary
+        395 :     0 :     0 :     1 : False : False : Binary
+        396 :     0 :     0 :     1 : False : False : Binary
+        397 :     0 :     0 :     1 : False : False : Binary
+        398 :     0 :     0 :     1 : False : False : Binary
+        399 :     0 :     0 :     1 : False : False : Binary
+        400 :     0 :     0 :     1 : False : False : Binary
+        401 :     0 :     0 :     1 : False : False : Binary
+        402 :     0 :     0 :     1 : False : False : Binary
+        403 :     0 :     0 :     1 : False : False : Binary
+        404 :     0 :     0 :     1 : False : False : Binary
+        405 :     0 :     0 :     1 : False : False : Binary
+        406 :     0 :     0 :     1 : False : False : Binary
+        407 :     0 :     0 :     1 : False : False : Binary
+        408 :     0 :     0 :     1 : False : False : Binary
+        409 :     0 :     0 :     1 : False : False : Binary
+        410 :     0 :     0 :     1 : False : False : Binary
+        411 :     0 :     0 :     1 : False : False : Binary
+        412 :     0 :     0 :     1 : False : False : Binary
+        413 :     0 :     0 :     1 : False : False : Binary
+        414 :     0 :     0 :     1 : False : False : Binary
+        415 :     0 :     0 :     1 : False : False : Binary
+        416 :     0 :     0 :     1 : False : False : Binary
+        417 :     0 :     0 :     1 : False : False : Binary
+        418 :     0 :     0 :     1 : False : False : Binary
+        419 :     0 :     0 :     1 : False : False : Binary
+        420 :     0 :     0 :     1 : False : False : Binary
+        421 :     0 :     0 :     1 : False : False : Binary
+        422 :     0 :     0 :     1 : False : False : Binary
+        423 :     0 :     0 :     1 : False : False : Binary
+        424 :     0 :     0 :     1 : False : False : Binary
+        425 :     0 :     0 :     1 : False : False : Binary
+        426 :     0 :     0 :     1 : False : False : Binary
+        427 :     0 :     0 :     1 : False : False : Binary
+        428 :     0 :     0 :     1 : False : False : Binary
+        429 :     0 :     0 :     1 : False : False : Binary
+        430 :     0 :     0 :     1 : False : False : Binary
+        431 :     0 :     0 :     1 : False : False : Binary
+        432 :     0 :     0 :     1 : False : False : Binary
+        433 :     0 :     0 :     1 : False : False : Binary
+        434 :     0 :     0 :     1 : False : False : Binary
+        435 :     0 :     0 :     1 : False : False : Binary
+        436 :     0 :     0 :     1 : False : False : Binary
+        437 :     0 :     0 :     1 : False : False : Binary
+        438 :     0 :     0 :     1 : False : False : Binary
+        439 :     0 :     0 :     1 : False : False : Binary
+        440 :     0 :     0 :     1 : False : False : Binary
+        441 :     0 :     0 :     1 : False : False : Binary
+        442 :     0 :     0 :     1 : False : False : Binary
+        443 :     0 :     0 :     1 : False : False : Binary
+        444 :     0 :     0 :     1 : False : False : Binary
+        445 :     0 :     0 :     1 : False : False : Binary
+        446 :     0 :     0 :     1 : False : False : Binary
+        447 :     0 :     0 :     1 : False : False : Binary
+        448 :     0 :     0 :     1 : False : False : Binary
+        449 :     0 :     0 :     1 : False : False : Binary
+        450 :     0 :     0 :     1 : False : False : Binary
+        451 :     0 :     0 :     1 : False : False : Binary
+        452 :     0 :     0 :     1 : False : False : Binary
+        453 :     0 :     0 :     1 : False : False : Binary
+        454 :     0 :     0 :     1 : False : False : Binary
+        455 :     0 :     0 :     1 : False : False : Binary
+        456 :     0 :     0 :     1 : False : False : Binary
+        457 :     0 :     0 :     1 : False : False : Binary
+        458 :     0 :     0 :     1 : False : False : Binary
+        459 :     0 :     0 :     1 : False : False : Binary
+        460 :     0 :     0 :     1 : False : False : Binary
+        461 :     0 :     0 :     1 : False : False : Binary
+        462 :     0 :     0 :     1 : False : False : Binary
+        463 :     0 :     0 :     1 : False : False : Binary
+        464 :     0 :     0 :     1 : False : False : Binary
+        465 :     0 :     0 :     1 : False : False : Binary
+        466 :     0 :     0 :     1 : False : False : Binary
+        467 :     0 :     0 :     1 : False : False : Binary
+        468 :     0 :     0 :     1 : False : False : Binary
+        469 :     0 :     0 :     1 : False : False : Binary
+        470 :     0 :     0 :     1 : False : False : Binary
+        471 :     0 :     0 :     1 : False : False : Binary
+        472 :     0 :     0 :     1 : False : False : Binary
+        473 :     0 :     0 :     1 : False : False : Binary
+        474 :     0 :     0 :     1 : False : False : Binary
+        475 :     0 :     0 :     1 : False : False : Binary
+        476 :     0 :     0 :     1 : False : False : Binary
+        477 :     0 :     0 :     1 : False : False : Binary
+        478 :     0 :     0 :     1 : False : False : Binary
+        479 :     0 :     0 :     1 : False : False : Binary
+        480 :     0 :     0 :     1 : False : False : Binary
+        481 :     0 :     0 :     1 : False : False : Binary
+        482 :     0 :     0 :     1 : False : False : Binary
+        483 :     0 :     0 :     1 : False : False : Binary
+        484 :     0 :     0 :     1 : False : False : Binary
+        485 :     0 :     0 :     1 : False : False : Binary
+        486 :     0 :     0 :     1 : False : False : Binary
+        487 :     0 :     0 :     1 : False : False : Binary
+        488 :     0 :     0 :     1 : False : False : Binary
+        489 :     0 :     0 :     1 : False : False : Binary
+        490 :     0 :     0 :     1 : False : False : Binary
+        491 :     0 :     0 :     1 : False : False : Binary
+        492 :     0 :     0 :     1 : False : False : Binary
+        493 :     0 :     0 :     1 : False : False : Binary
+        494 :     0 :     0 :     1 : False : False : Binary
+        495 :     0 :     0 :     1 : False : False : Binary
+        496 :     0 :     0 :     1 : False : False : Binary
+        497 :     0 :     0 :     1 : False : False : Binary
+        498 :     0 :     0 :     1 : False : False : Binary
+        499 :     0 :     0 :     1 : False : False : Binary
+        500 :     0 :     0 :     1 : False : False : Binary
+        501 :     0 :     0 :     1 : False : False : Binary
+        502 :     0 :     0 :     1 : False : False : Binary
+        503 :     0 :     0 :     1 : False : False : Binary
+        504 :     0 :     0 :     1 : False : False : Binary
+        505 :     0 :     0 :     1 : False : False : Binary
+        506 :     0 :     0 :     1 : False : False : Binary
+        507 :     0 :     0 :     1 : False : False : Binary
+        508 :     0 :     0 :     1 : False : False : Binary
+        509 :     0 :     0 :     1 : False : False : Binary
+        510 :     0 :     0 :     1 : False : False : Binary
+        511 :     0 :     0 :     1 : False : False : Binary
+        512 :     0 :     0 :     1 : False : False : Binary
+        513 :     0 :     0 :     1 : False : False : Binary
+        514 :     0 :     0 :     1 : False : False : Binary
+        515 :     0 :     0 :     1 : False : False : Binary
+        516 :     0 :     0 :     1 : False : False : Binary
+        517 :     0 :     0 :     1 : False : False : Binary
+        518 :     0 :     0 :     1 : False : False : Binary
+        519 :     0 :     0 :     1 : False : False : Binary
+        520 :     0 :     0 :     1 : False : False : Binary
+        521 :     0 :     0 :     1 : False : False : Binary
+        522 :     0 :     0 :     1 : False : False : Binary
+        523 :     0 :     0 :     1 : False : False : Binary
+        524 :     0 :     0 :     1 : False : False : Binary
+        525 :     0 :     0 :     1 : False : False : Binary
+        526 :     0 :     0 :     1 : False : False : Binary
+        527 :     0 :     0 :     1 : False : False : Binary
+        528 :     0 :     0 :     1 : False : False : Binary
+        529 :     0 :     0 :     1 : False : False : Binary
+        530 :     0 :     0 :     1 : False : False : Binary
+        531 :     0 :     0 :     1 : False : False : Binary
+        532 :     0 :     0 :     1 : False : False : Binary
+        533 :     0 :     0 :     1 : False : False : Binary
+        534 :     0 :     0 :     1 : False : False : Binary
+        535 :     0 :     0 :     1 : False : False : Binary
+        536 :     0 :     0 :     1 : False : False : Binary
+        537 :     0 :     0 :     1 : False : False : Binary
+        538 :     0 :     0 :     1 : False : False : Binary
+        539 :     0 :     0 :     1 : False : False : Binary
+        540 :     0 :     0 :     1 : False : False : Binary
+        541 :     0 :     0 :     1 : False : False : Binary
+        542 :     0 :     0 :     1 : False : False : Binary
+        543 :     0 :     0 :     1 : False : False : Binary
+        544 :     0 :     0 :     1 : False : False : Binary
+        545 :     0 :     0 :     1 : False : False : Binary
+        546 :     0 :     0 :     1 : False : False : Binary
+        547 :     0 :     0 :     1 : False : False : Binary
+        548 :     0 :     0 :     1 : False : False : Binary
+        549 :     0 :     0 :     1 : False : False : Binary
+        550 :     0 :     0 :     1 : False : False : Binary
+        551 :     0 :     0 :     1 : False : False : Binary
+        552 :     0 :     0 :     1 : False : False : Binary
+        553 :     0 :     0 :     1 : False : False : Binary
+        554 :     0 :     0 :     1 : False : False : Binary
+        555 :     0 :     0 :     1 : False : False : Binary
+        556 :     0 :     0 :     1 : False : False : Binary
+        557 :     0 :     0 :     1 : False : False : Binary
+        558 :     0 :     0 :     1 : False : False : Binary
+        559 :     0 :     0 :     1 : False : False : Binary
+        560 :     0 :     0 :     1 : False : False : Binary
+        561 :     0 :     0 :     1 : False : False : Binary
+        562 :     0 :     0 :     1 : False : False : Binary
+        563 :     0 :     0 :     1 : False : False : Binary
+        564 :     0 :     0 :     1 : False : False : Binary
+        565 :     0 :     0 :     1 : False : False : Binary
+        566 :     0 :     0 :     1 : False : False : Binary
+        567 :     0 :     0 :     1 : False : False : Binary
+        568 :     0 :     0 :     1 : False : False : Binary
+        569 :     0 :     0 :     1 : False : False : Binary
+        570 :     0 :     0 :     1 : False : False : Binary
+        571 :     0 :     0 :     1 : False : False : Binary
+        572 :     0 :     0 :     1 : False : False : Binary
+        573 :     0 :     0 :     1 : False : False : Binary
+        574 :     0 :     0 :     1 : False : False : Binary
+        575 :     0 :     0 :     1 : False : False : Binary
+        576 :     0 :     0 :     1 : False : False : Binary
+        577 :     0 :     0 :     1 : False : False : Binary
+        578 :     0 :     0 :     1 : False : False : Binary
+        579 :     0 :     0 :     1 : False : False : Binary
+        580 :     0 :     0 :     1 : False : False : Binary
+        581 :     0 :     0 :     1 : False : False : Binary
+        582 :     0 :     0 :     1 : False : False : Binary
+        583 :     0 :     0 :     1 : False : False : Binary
+        584 :     0 :     0 :     1 : False : False : Binary
+        585 :     0 :     0 :     1 : False : False : Binary
+        586 :     0 :     0 :     1 : False : False : Binary
+        587 :     0 :     0 :     1 : False : False : Binary
+        588 :     0 :     0 :     1 : False : False : Binary
+        589 :     0 :     0 :     1 : False : False : Binary
+        590 :     0 :     0 :     1 : False : False : Binary
+        591 :     0 :     0 :     1 : False : False : Binary
+        592 :     0 :     0 :     1 : False : False : Binary
+        593 :     0 :     0 :     1 : False : False : Binary
+        594 :     0 :     0 :     1 : False : False : Binary
+        595 :     0 :     0 :     1 : False : False : Binary
+        596 :     0 :     0 :     1 : False : False : Binary
+        597 :     0 :     0 :     1 : False : False : Binary
+        598 :     0 :     0 :     1 : False : False : Binary
+        599 :     0 :     0 :     1 : False : False : Binary
+        600 :     0 :     0 :     1 : False : False : Binary
+        601 :     0 :     0 :     1 : False : False : Binary
+        602 :     0 :     0 :     1 : False : False : Binary
+        603 :     0 :     0 :     1 : False : False : Binary
+        604 :     0 :     0 :     1 : False : False : Binary
+        605 :     0 :     0 :     1 : False : False : Binary
+        606 :     0 :     0 :     1 : False : False : Binary
+        607 :     0 :     0 :     1 : False : False : Binary
+        608 :     0 :     0 :     1 : False : False : Binary
+        609 :     0 :     0 :     1 : False : False : Binary
+        610 :     0 :     0 :     1 : False : False : Binary
+        611 :     0 :     0 :     1 : False : False : Binary
+        612 :     0 :     0 :     1 : False : False : Binary
+        613 :     0 :     0 :     1 : False : False : Binary
+        614 :     0 :     0 :     1 : False : False : Binary
+        615 :     0 :     0 :     1 : False : False : Binary
+        616 :     0 :     0 :     1 : False : False : Binary
+        617 :     0 :     0 :     1 : False : False : Binary
+        618 :     0 :     0 :     1 : False : False : Binary
+        619 :     0 :     0 :     1 : False : False : Binary
+        620 :     0 :     0 :     1 : False : False : Binary
+        621 :     0 :     0 :     1 : False : False : Binary
+        622 :     0 :     0 :     1 : False : False : Binary
+        623 :     0 :     0 :     1 : False : False : Binary
+        624 :     0 :     0 :     1 : False : False : Binary
+        625 :     0 :     0 :     1 : False : False : Binary
+        626 :     0 :     0 :     1 : False : False : Binary
+        627 :     0 :     0 :     1 : False : False : Binary
+        628 :     0 :     0 :     1 : False : False : Binary
+        629 :     0 :     0 :     1 : False : False : Binary
+        630 :     0 :     0 :     1 : False : False : Binary
+        631 :     0 :     0 :     1 : False : False : Binary
+        632 :     0 :     0 :     1 : False : False : Binary
+        633 :     0 :     0 :     1 : False : False : Binary
+        634 :     0 :     0 :     1 : False : False : Binary
+        635 :     0 :     0 :     1 : False : False : Binary
+        636 :     0 :     0 :     1 : False : False : Binary
+        637 :     0 :     0 :     1 : False : False : Binary
+        638 :     0 :     0 :     1 : False : False : Binary
+        639 :     0 :     0 :     1 : False : False : Binary
+        640 :     0 :     0 :     1 : False : False : Binary
+        641 :     0 :     0 :     1 : False : False : Binary
+        642 :     0 :     0 :     1 : False : False : Binary
+        643 :     0 :     0 :     1 : False : False : Binary
+        644 :     0 :     0 :     1 : False : False : Binary
+        645 :     0 :     0 :     1 : False : False : Binary
+        646 :     0 :     0 :     1 : False : False : Binary
+        647 :     0 :     0 :     1 : False : False : Binary
+        648 :     0 :     0 :     1 : False : False : Binary
+        649 :     0 :     0 :     1 : False : False : Binary
+        650 :     0 :     0 :     1 : False : False : Binary
+        651 :     0 :     0 :     1 : False : False : Binary
+        652 :     0 :     0 :     1 : False : False : Binary
+        653 :     0 :     0 :     1 : False : False : Binary
+        654 :     0 :     0 :     1 : False : False : Binary
+        655 :     0 :     0 :     1 : False : False : Binary
+        656 :     0 :     0 :     1 : False : False : Binary
+        657 :     0 :     0 :     1 : False : False : Binary
+        658 :     0 :     0 :     1 : False : False : Binary
+        659 :     0 :     0 :     1 : False : False : Binary
+        660 :     0 :     0 :     1 : False : False : Binary
+        661 :     0 :     0 :     1 : False : False : Binary
+        662 :     0 :     0 :     1 : False : False : Binary
+        663 :     0 :     0 :     1 : False : False : Binary
+        664 :     0 :     0 :     1 : False : False : Binary
+        665 :     0 :     0 :     1 : False : False : Binary
+        666 :     0 :     0 :     1 : False : False : Binary
+        667 :     0 :     0 :     1 : False : False : Binary
+        668 :     0 :     0 :     1 : False : False : Binary
+        669 :     0 :     0 :     1 : False : False : Binary
+        670 :     0 :     0 :     1 : False : False : Binary
+        671 :     0 :     0 :     1 : False : False : Binary
+        672 :     0 :     0 :     1 : False : False : Binary
+        673 :     0 :     0 :     1 : False : False : Binary
+        674 :     0 :     0 :     1 : False : False : Binary
+        675 :     0 :     0 :     1 : False : False : Binary
+        676 :     0 :     0 :     1 : False : False : Binary
+        677 :     0 :     0 :     1 : False : False : Binary
+        678 :     0 :     0 :     1 : False : False : Binary
+        679 :     0 :     0 :     1 : False : False : Binary
+        680 :     0 :     0 :     1 : False : False : Binary
+        681 :     0 :     0 :     1 : False : False : Binary
+        682 :     0 :     0 :     1 : False : False : Binary
+        683 :     0 :     0 :     1 : False : False : Binary
+        684 :     0 :     0 :     1 : False : False : Binary
+        685 :     0 :     0 :     1 : False : False : Binary
+        686 :     0 :     0 :     1 : False : False : Binary
+        687 :     0 :     0 :     1 : False : False : Binary
+        688 :     0 :     0 :     1 : False : False : Binary
+        689 :     0 :     0 :     1 : False : False : Binary
+        690 :     0 :     0 :     1 : False : False : Binary
+        691 :     0 :     0 :     1 : False : False : Binary
+        692 :     0 :     0 :     1 : False : False : Binary
+        693 :     0 :     0 :     1 : False : False : Binary
+        694 :     0 :     0 :     1 : False : False : Binary
+        695 :     0 :     0 :     1 : False : False : Binary
+        696 :     0 :     0 :     1 : False : False : Binary
+        697 :     0 :     0 :     1 : False : False : Binary
+        698 :     0 :     0 :     1 : False : False : Binary
+        699 :     0 :     0 :     1 : False : False : Binary
+        700 :     0 :     0 :     1 : False : False : Binary
+        701 :     0 :     0 :     1 : False : False : Binary
+        702 :     0 :     0 :     1 : False : False : Binary
+        703 :     0 :     0 :     1 : False : False : Binary
+        704 :     0 :     0 :     1 : False : False : Binary
+        705 :     0 :     0 :     1 : False : False : Binary
+        706 :     0 :     0 :     1 : False : False : Binary
+        707 :     0 :     0 :     1 : False : False : Binary
+        708 :     0 :     0 :     1 : False : False : Binary
+        709 :     0 :     0 :     1 : False : False : Binary
+        710 :     0 :     0 :     1 : False : False : Binary
+        711 :     0 :     0 :     1 : False : False : Binary
+        712 :     0 :     0 :     1 : False : False : Binary
+        713 :     0 :     0 :     1 : False : False : Binary
+        714 :     0 :     0 :     1 : False : False : Binary
+        715 :     0 :     0 :     1 : False : False : Binary
+        716 :     0 :     0 :     1 : False : False : Binary
+        717 :     0 :     0 :     1 : False : False : Binary
+        718 :     0 :     0 :     1 : False : False : Binary
+        719 :     0 :     0 :     1 : False : False : Binary
+        720 :     0 :     0 :     1 : False : False : Binary
+        721 :     0 :     0 :     1 : False : False : Binary
+        722 :     0 :     0 :     1 : False : False : Binary
+        723 :     0 :     0 :     1 : False : False : Binary
+        724 :     0 :     0 :     1 : False : False : Binary
+        725 :     0 :     0 :     1 : False : False : Binary
+        726 :     0 :     0 :     1 : False : False : Binary
+        727 :     0 :     0 :     1 : False : False : Binary
+        728 :     0 :     0 :     1 : False : False : Binary
+        729 :     0 :     0 :     1 : False : False : Binary
+        730 :     0 :     0 :     1 : False : False : Binary
+        731 :     0 :     0 :     1 : False : False : Binary
+        732 :     0 :     0 :     1 : False : False : Binary
+        733 :     0 :     0 :     1 : False : False : Binary
+        734 :     0 :     0 :     1 : False : False : Binary
+        735 :     0 :     0 :     1 : False : False : Binary
+        736 :     0 :     0 :     1 : False : False : Binary
+        737 :     0 :     0 :     1 : False : False : Binary
+        738 :     0 :     0 :     1 : False : False : Binary
+        739 :     0 :     0 :     1 : False : False : Binary
+        740 :     0 :     0 :     1 : False : False : Binary
+        741 :     0 :     0 :     1 : False : False : Binary
+        742 :     0 :     0 :     1 : False : False : Binary
+        743 :     0 :     0 :     1 : False : False : Binary
+        744 :     0 :     0 :     1 : False : False : Binary
+
+1 Objective Declarations
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Sense    : Expression
+        None :   True : maximize : Y[0] + Y[1] + Y[2] + Y[3] + Y[4] + Y[5] + Y[6] + Y[7] + Y[8] + Y[9] + Y[10] + Y[11] + Y[12] + 2*Y[13] + 2*Y[14] + Y[15] + Y[16] + Y[17] + Y[18] + 2*Y[19] + Y[20] + Y[21] + Y[22] + 2*Y[23] + Y[24] + Y[25] + Y[26] + 2*Y[27] + Y[28] + 2*Y[29] + Y[30] + 2*Y[31] + Y[32] + Y[33] + Y[34] + 2*Y[35] + Y[36] + 2*Y[37] + Y[38] + 2*Y[39] + 2*Y[40] + 2*Y[41] + 2*Y[42] + Y[43] + Y[44] + 2*Y[45] + Y[46] + Y[47] + 2*Y[48] + 2*Y[49] + Y[50] + Y[51] + 2*Y[52] + 2*Y[53] + 2*Y[54] + Y[55] + Y[56] + Y[57] + 2*Y[58] + 2*Y[59] + 2*Y[60] + 2*Y[61] + Y[62] + 2*Y[63] + 2*Y[64] + 2*Y[65] + 2*Y[66] + 2*Y[67] + 2*Y[68] + Y[69] + Y[70] + 2*Y[71] + 2*Y[72] + 2*Y[73] + 2*Y[74] + Y[75] + Y[76] + Y[77] + Y[78] + 2*Y[79] + Y[80] + Y[81] + Y[82] + 2*Y[83] + Y[84] + Y[85] + 2*Y[86] + 2*Y[87] + 2*Y[88] + 2*Y[89] + 2*Y[90] + 2*Y[91] + Y[92] + Y[93] + Y[94] + 2*Y[95] + 2*Y[96] + Y[97] + Y[98] + 2*Y[99] + Y[100] + Y[101] + Y[102] + Y[103] + 2*Y[104] + 2*Y[105] + 2*Y[106] + 2*Y[107] + 2*Y[108] + 2*Y[109] + 2*Y[110] + 2*Y[111] + 2*Y[112] + 2*Y[113] + 2*Y[114] + Y[115] + 2*Y[116] + 2*Y[117] + 2*Y[118] + Y[119] + 2*Y[120] + 2*Y[121] + 2*Y[122] + Y[123] + Y[124] + Y[125] + Y[126] + 2*Y[127] + 2*Y[128] + Y[129] + Y[130] + 2*Y[131] + Y[132] + Y[133] + Y[134] + 2*Y[135] + 2*Y[136] + 2*Y[137] + 2*Y[138] + 2*Y[139] + Y[140] + 2*Y[141] + Y[142] + Y[143] + 2*Y[144] + 2*Y[145] + Y[146] + 2*Y[147] + 2*Y[148] + Y[149] + Y[150] + 2*Y[151] + Y[152] + 2*Y[153] + 2*Y[154] + Y[155] + Y[156] + 2*Y[157] + Y[158] + Y[159] + 2*Y[160] + Y[161] + 2*Y[162] + 2*Y[163] + Y[164] + Y[165] + Y[166] + Y[167] + 2*Y[168] + Y[169] + 2*Y[170] + 2*Y[171] + Y[172] + Y[173] + 2*Y[174] + 2*Y[175] + 2*Y[176] + Y[177] + Y[178] + 2*Y[179] + Y[180] + Y[181] + 2*Y[182] + 2*Y[183] + 2*Y[184] + 2*Y[185] + 2*Y[186] + Y[187] + Y[188] + Y[189] + 2*Y[190] + 2*Y[191] + 2*Y[192] + 2*Y[193] + 2*Y[194] + Y[195] + 2*Y[196] + 2*Y[197] + 2*Y[198] + 2*Y[199] + 2*Y[200] + Y[201] + 2*Y[202] + Y[203] + Y[204] + 2*Y[205] + 2*Y[206] + Y[207] + Y[208] + Y[209] + 2*Y[210] + 2*Y[211] + Y[212] + 2*Y[213] + Y[214] + Y[215] + 2*Y[216] + 2*Y[217] + 2*Y[218] + 2*Y[219] + 2*Y[220] + 2*Y[221] + 2*Y[222] + Y[223] + 2*Y[224] + 2*Y[225] + 2*Y[226] + 2*Y[227] + 2*Y[228] + 2*Y[229] + Y[230] + 2*Y[231] + 2*Y[232] + 2*Y[233] + 2*Y[234] + 2*Y[235] + 2*Y[236] + 2*Y[237] + Y[238] + Y[239] + Y[240] + 2*Y[241] + 2*Y[242] + 2*Y[243] + 2*Y[244] + 2*Y[245] + 2*Y[246] + Y[247] + 2*Y[248] + Y[249] + 2*Y[250] + 2*Y[251] + 2*Y[252] + Y[253] + 2*Y[254] + 2*Y[255] + 2*Y[256] + 2*Y[257] + 2*Y[258] + Y[259] + Y[260] + 2*Y[261] + Y[262] + Y[263] + 2*Y[264] + Y[265] + 2*Y[266] + 2*Y[267] + Y[268] + 2*Y[269] + 2*Y[270] + 2*Y[271] + Y[272] + Y[273] + Y[274] + 2*Y[275] + Y[276] + 2*Y[277] + Y[278] + 2*Y[279] + 2*Y[280] + 2*Y[281] + 2*Y[282] + Y[283] + 2*Y[284] + 2*Y[285] + Y[286] + 2*Y[287] + Y[288] + Y[289] + 2*Y[290] + 2*Y[291] + 2*Y[292] + 2*Y[293] + Y[294] + 2*Y[295] + Y[296] + 2*Y[297] + Y[298] + 2*Y[299] + Y[300] + Y[301] + 2*Y[302] + Y[303] + Y[304] + 2*Y[305] + Y[306] + Y[307] + Y[308] + 2*Y[309] + 2*Y[310] + 2*Y[311] + Y[312] + Y[313] + Y[314] + Y[315] + Y[316] + 2*Y[317] + Y[318] + 2*Y[319] + Y[320] + Y[321] + Y[322] + Y[323] + Y[324] + Y[325] + Y[326] + Y[327] + Y[328] + 2*Y[329] + 2*Y[330] + Y[331] + 2*Y[332] + Y[333] + Y[334] + Y[335] + Y[336] + Y[337] + Y[338] + 2*Y[339] + Y[340] + 2*Y[341] + Y[342] + 2*Y[343] + Y[344] + 2*Y[345] + 2*Y[346] + 2*Y[347] + Y[348] + Y[349] + Y[350] + Y[351] + Y[352] + Y[353] + Y[354] + 2*Y[355] + Y[356] + 2*Y[357] + Y[358] + Y[359] + Y[360] + Y[361] + Y[362] + Y[363] + Y[364] + 2*Y[365] + 2*Y[366] + 2*Y[367] + 2*Y[368] + 2*Y[369] + 2*Y[370] + Y[371] + Y[372] + 2*Y[373] + Y[374] + 2*Y[375] + Y[376] + Y[377] + 2*Y[378] + Y[379] + Y[380] + 2*Y[381] + Y[382] + Y[383] + 2*Y[384] + Y[385] + Y[386] + Y[387] + Y[388] + Y[389] + Y[390] + Y[391] + Y[392] + Y[393] + Y[394] + Y[395] + Y[396] + Y[397] + Y[398] + Y[399] + Y[400] + Y[401] + Y[402] + Y[403] + 2*Y[404] + 2*Y[405] + 2*Y[406] + Y[407] + Y[408] + 2*Y[409] + Y[410] + Y[411] + 2*Y[412] + Y[413] + Y[414] + 2*Y[415] + Y[416] + Y[417] + Y[418] + Y[419] + 2*Y[420] + 2*Y[421] + Y[422] + Y[423] + Y[424] + Y[425] + Y[426] + Y[427] + Y[428] + Y[429] + Y[430] + 2*Y[431] + Y[432] + Y[433] + Y[434] + Y[435] + 2*Y[436] + 2*Y[437] + Y[438] + 2*Y[439] + 2*Y[440] + Y[441] + 2*Y[442] + Y[443] + 2*Y[444] + Y[445] + Y[446] + Y[447] + Y[448] + Y[449] + Y[450] + Y[451] + Y[452] + 2*Y[453] + Y[454] + 2*Y[455] + 2*Y[456] + 2*Y[457] + 2*Y[458] + Y[459] + Y[460] + Y[461] + Y[462] + Y[463] + Y[464] + Y[465] + Y[466] + Y[467] + Y[468] + Y[469] + 2*Y[470] + 2*Y[471] + Y[472] + 2*Y[473] + Y[474] + Y[475] + Y[476] + Y[477] + Y[478] + Y[479] + Y[480] + Y[481] + Y[482] + Y[483] + 2*Y[484] + 2*Y[485] + 2*Y[486] + Y[487] + 2*Y[488] + Y[489] + Y[490] + Y[491] + Y[492] + Y[493] + Y[494] + Y[495] + Y[496] + Y[497] + Y[498] + Y[499] + Y[500] + Y[501] + Y[502] + 2*Y[503] + 2*Y[504] + Y[505] + Y[506] + Y[507] + Y[508] + 2*Y[509] + Y[510] + Y[511] + 2*Y[512] + 2*Y[513] + Y[514] + Y[515] + 2*Y[516] + 2*Y[517] + 2*Y[518] + Y[519] + Y[520] + Y[521] + Y[522] + Y[523] + Y[524] + Y[525] + Y[526] + Y[527] + Y[528] + Y[529] + Y[530] + 2*Y[531] + Y[532] + Y[533] + Y[534] + 2*Y[535] + 2*Y[536] + Y[537] + 2*Y[538] + 2*Y[539] + 2*Y[540] + Y[541] + 2*Y[542] + Y[543] + Y[544] + 2*Y[545] + Y[546] + Y[547] + Y[548] + Y[549] + Y[550] + Y[551] + Y[552] + Y[553] + Y[554] + Y[555] + 2*Y[556] + Y[557] + Y[558] + 2*Y[559] + 2*Y[560] + 2*Y[561] + 2*Y[562] + 2*Y[563] + 2*Y[564] + 2*Y[565] + 2*Y[566] + 2*Y[567] + 2*Y[568] + 2*Y[569] + Y[570] + 2*Y[571] + Y[572] + Y[573] + Y[574] + Y[575] + Y[576] + Y[577] + Y[578] + Y[579] + Y[580] + 2*Y[581] + 2*Y[582] + 2*Y[583] + 2*Y[584] + 2*Y[585] + 2*Y[586] + Y[587] + 2*Y[588] + 2*Y[589] + 2*Y[590] + Y[591] + Y[592] + Y[593] + 2*Y[594] + 2*Y[595] + Y[596] + Y[597] + 2*Y[598] + Y[599] + Y[600] + Y[601] + Y[602] + Y[603] + Y[604] + 2*Y[605] + 2*Y[606] + 2*Y[607] + 2*Y[608] + 2*Y[609] + Y[610] + 2*Y[611] + 2*Y[612] + 2*Y[613] + Y[614] + 2*Y[615] + Y[616] + Y[617] + Y[618] + Y[619] + 2*Y[620] + 2*Y[621] + Y[622] + Y[623] + Y[624] + Y[625] + Y[626] + Y[627] + 2*Y[628] + 2*Y[629] + 2*Y[630] + 2*Y[631] + Y[632] + Y[633] + Y[634] + Y[635] + Y[636] + Y[637] + 2*Y[638] + 2*Y[639] + Y[640] + Y[641] + 2*Y[642] + Y[643] + Y[644] + 2*Y[645] + Y[646] + Y[647] + Y[648] + Y[649] + Y[650] + Y[651] + 2*Y[652] + Y[653] + Y[654] + Y[655] + Y[656] + Y[657] + 2*Y[658] + Y[659] + 2*Y[660] + Y[661] + Y[662] + 2*Y[663] + Y[664] + Y[665] + Y[666] + Y[667] + Y[668] + Y[669] + 2*Y[670] + Y[671] + Y[672] + 2*Y[673] + Y[674] + Y[675] + 2*Y[676] + Y[677] + 2*Y[678] + Y[679] + Y[680] + Y[681] + Y[682] + Y[683] + Y[684] + Y[685] + Y[686] + Y[687] + 2*Y[688] + Y[689] + 2*Y[690] + 2*Y[691] + 2*Y[692] + Y[693] + 2*Y[694] + Y[695] + 2*Y[696] + Y[697] + Y[698] + 2*Y[699] + 2*Y[700] + 2*Y[701] + 2*Y[702] + Y[703] + 2*Y[704] + 2*Y[705] + Y[706] + Y[707] + Y[708] + Y[709] + Y[710] + Y[711] + Y[712] + 2*Y[713] + 2*Y[714] + Y[715] + Y[716] + Y[717] + 2*Y[718] + Y[719] + Y[720] + Y[721] + 2*Y[722] + Y[723] + 2*Y[724] + 2*Y[725] + Y[726] + 2*Y[727] + Y[728] + Y[729] + Y[730] + Y[731] + Y[732] + 2*Y[733] + Y[734] + Y[735] + Y[736] + Y[737] + Y[738] + 2*Y[739] + Y[740] + 2*Y[741] + Y[742] + Y[743] + 2*Y[744]
+
+2 Constraint Declarations
+    c_coverage : Size=745, Index=c_coverage_index, Active=True
+        Key : Lower : Body                                                                   : Upper : Active
+          1 :   0.0 :                                                                 - Y[0] :  +Inf :   True
+          2 :   0.0 :                        X[0] + X[1] + X[7] + X[8] + X[9] + X[10] - Y[1] :  +Inf :   True
+          3 :   0.0 :                                                                 - Y[2] :  +Inf :   True
+          4 :   0.0 :                                                                 - Y[3] :  +Inf :   True
+          5 :   0.0 :                                                                 - Y[4] :  +Inf :   True
+          6 :   0.0 :                X[0] + X[2] + X[7] + X[8] + X[9] + X[10] + X[13] - Y[5] :  +Inf :   True
+          7 :   0.0 :                                                                 - Y[6] :  +Inf :   True
+          8 :   0.0 :                               X[0] + X[7] + X[8] + X[9] + X[10] - Y[7] :  +Inf :   True
+          9 :   0.0 :                                                                 - Y[8] :  +Inf :   True
+         10 :   0.0 :                                                    X[9] + X[10] - Y[9] :  +Inf :   True
+         11 :   0.0 :                                                   X[2] + X[11] - Y[10] :  +Inf :   True
+         12 :   0.0 :                                                           X[0] - Y[11] :  +Inf :   True
+         13 :   0.0 :                                             X[0] + X[7] + X[8] - Y[12] :  +Inf :   True
+         14 :   0.0 :                              X[0] + X[7] + X[8] + X[9] + X[10] - Y[13] :  +Inf :   True
+         15 :   0.0 :                                      X[0] + X[2] + X[7] + X[8] - Y[14] :  +Inf :   True
+         16 :   0.0 :                                                   X[2] + X[11] - Y[15] :  +Inf :   True
+         17 :   0.0 :                       X[1] + X[2] + X[7] + X[8] + X[9] + X[10] - Y[16] :  +Inf :   True
+         18 :   0.0 :                                             X[0] + X[7] + X[8] - Y[17] :  +Inf :   True
+         19 :   0.0 :                                                                - Y[18] :  +Inf :   True
+         20 :   0.0 :                        X[0] + X[1] + X[3] + X[7] + X[8] + X[9] - Y[19] :  +Inf :   True
+         21 :   0.0 :                                                                - Y[20] :  +Inf :   True
+         22 :   0.0 : X[0] + X[1] + X[2] + X[3] + X[7] + X[8] + X[9] + X[10] + X[11] - Y[21] :  +Inf :   True
+         23 :   0.0 :                                                                - Y[22] :  +Inf :   True
+         24 :   0.0 :                                                                - Y[23] :  +Inf :   True
+         25 :   0.0 :                                                    X[8] + X[9] - Y[24] :  +Inf :   True
+         26 :   0.0 :                                             X[0] + X[7] + X[8] - Y[25] :  +Inf :   True
+         27 :   0.0 :                                                                - Y[26] :  +Inf :   True
+         28 :   0.0 :                                     X[2] + X[7] + X[8] + X[10] - Y[27] :  +Inf :   True
+         29 :   0.0 :                                      X[0] + X[1] + X[7] + X[8] - Y[28] :  +Inf :   True
+         30 :   0.0 :                                                                - Y[29] :  +Inf :   True
+         31 :   0.0 :                                                                - Y[30] :  +Inf :   True
+         32 :   0.0 :                                                                - Y[31] :  +Inf :   True
+         33 :   0.0 :                                                                - Y[32] :  +Inf :   True
+         34 :   0.0 :                              X[0] + X[7] + X[8] + X[9] + X[10] - Y[33] :  +Inf :   True
+         35 :   0.0 :                                             X[0] + X[7] + X[8] - Y[34] :  +Inf :   True
+         36 :   0.0 :                                                                - Y[35] :  +Inf :   True
+         37 :   0.0 :                                                                - Y[36] :  +Inf :   True
+         38 :   0.0 :                                                   X[1] + X[11] - Y[37] :  +Inf :   True
+         39 :   0.0 :                                                          X[11] - Y[38] :  +Inf :   True
+         40 :   0.0 :               X[1] + X[3] + X[7] + X[8] + X[9] + X[10] + X[11] - Y[39] :  +Inf :   True
+         41 :   0.0 :                                                                - Y[40] :  +Inf :   True
+         42 :   0.0 :                       X[0] + X[3] + X[7] + X[8] + X[9] + X[10] - Y[41] :  +Inf :   True
+         43 :   0.0 :                                                                - Y[42] :  +Inf :   True
+         44 :   0.0 :                                             X[2] + X[7] + X[8] - Y[43] :  +Inf :   True
+         45 :   0.0 :                                                                - Y[44] :  +Inf :   True
+         46 :   0.0 :                                                                - Y[45] :  +Inf :   True
+         47 :   0.0 :                                                                - Y[46] :  +Inf :   True
+         48 :   0.0 : X[0] + X[1] + X[2] + X[3] + X[7] + X[8] + X[9] + X[10] + X[11] - Y[47] :  +Inf :   True
+         49 :   0.0 :                                                                - Y[48] :  +Inf :   True
+         50 :   0.0 :                                      X[0] + X[3] + X[7] + X[8] - Y[49] :  +Inf :   True
+         51 :   0.0 :                                                                - Y[50] :  +Inf :   True
+         52 :   0.0 :                                                                - Y[51] :  +Inf :   True
+         53 :   0.0 :                                             X[0] + X[7] + X[8] - Y[52] :  +Inf :   True
+         54 :   0.0 :                                                    X[7] + X[8] - Y[53] :  +Inf :   True
+         55 :   0.0 :                                                           X[8] - Y[54] :  +Inf :   True
+         56 :   0.0 :                                                           X[7] - Y[55] :  +Inf :   True
+         57 :   0.0 :                                             X[0] + X[7] + X[8] - Y[56] :  +Inf :   True
+         58 :   0.0 :                                                                - Y[57] :  +Inf :   True
+         59 :   0.0 :                                                                - Y[58] :  +Inf :   True
+         60 :   0.0 :                                                                - Y[59] :  +Inf :   True
+         61 :   0.0 :                                                           X[7] - Y[60] :  +Inf :   True
+         62 :   0.0 :                                                                - Y[61] :  +Inf :   True
+         63 :   0.0 :                                             X[0] + X[7] + X[8] - Y[62] :  +Inf :   True
+         64 :   0.0 :                                                                - Y[63] :  +Inf :   True
+         65 :   0.0 :                                                                - Y[64] :  +Inf :   True
+         66 :   0.0 :                                                                - Y[65] :  +Inf :   True
+         67 :   0.0 :                                                                - Y[66] :  +Inf :   True
+         68 :   0.0 :                                                                - Y[67] :  +Inf :   True
+         69 :   0.0 :                                                                - Y[68] :  +Inf :   True
+         70 :   0.0 :                                                          X[13] - Y[69] :  +Inf :   True
+         71 :   0.0 :         X[0] + X[1] + X[2] + X[3] + X[7] + X[8] + X[9] + X[10] - Y[70] :  +Inf :   True
+         72 :   0.0 :                                                                - Y[71] :  +Inf :   True
+         73 :   0.0 :                                                           X[2] - Y[72] :  +Inf :   True
+         74 :   0.0 :                                                                - Y[73] :  +Inf :   True
+         75 :   0.0 :                                                                - Y[74] :  +Inf :   True
+         76 :   0.0 :                                                    X[0] + X[9] - Y[75] :  +Inf :   True
+         77 :   0.0 :                                                                - Y[76] :  +Inf :   True
+         78 :   0.0 :                                                    X[2] + X[8] - Y[77] :  +Inf :   True
+         79 :   0.0 :                                                    X[2] + X[8] - Y[78] :  +Inf :   True
+         80 :   0.0 :                                                                - Y[79] :  +Inf :   True
+         81 :   0.0 :                                                    X[7] + X[8] - Y[80] :  +Inf :   True
+         82 :   0.0 :                                                                - Y[81] :  +Inf :   True
+         83 :   0.0 :                                             X[2] + X[7] + X[8] - Y[82] :  +Inf :   True
+         84 :   0.0 :                                                                - Y[83] :  +Inf :   True
+         85 :   0.0 :                                                                - Y[84] :  +Inf :   True
+         86 :   0.0 :                                                                - Y[85] :  +Inf :   True
+         87 :   0.0 :                                                                - Y[86] :  +Inf :   True
+         88 :   0.0 :                                             X[0] + X[7] + X[8] - Y[87] :  +Inf :   True
+         89 :   0.0 :                                                                - Y[88] :  +Inf :   True
+         90 :   0.0 :                                                                - Y[89] :  +Inf :   True
+         91 :   0.0 :                                                                - Y[90] :  +Inf :   True
+         92 :   0.0 :                                                                - Y[91] :  +Inf :   True
+         93 :   0.0 :                                                                - Y[92] :  +Inf :   True
+         94 :   0.0 :                                                                - Y[93] :  +Inf :   True
+         95 :   0.0 :                                                          X[13] - Y[94] :  +Inf :   True
+         96 :   0.0 :                                                                - Y[95] :  +Inf :   True
+         97 :   0.0 :                                                                - Y[96] :  +Inf :   True
+         98 :   0.0 :                                                                - Y[97] :  +Inf :   True
+         99 :   0.0 :                                                           X[2] - Y[98] :  +Inf :   True
+        100 :   0.0 :                               X[0] + X[3] + X[7] + X[8] + X[9] - Y[99] :  +Inf :   True
+        101 :   0.0 :                                            X[0] + X[7] + X[8] - Y[100] :  +Inf :   True
+        102 :   0.0 :                                                               - Y[101] :  +Inf :   True
+        103 :   0.0 :                                                               - Y[102] :  +Inf :   True
+        104 :   0.0 :                                                               - Y[103] :  +Inf :   True
+        105 :   0.0 :                                                               - Y[104] :  +Inf :   True
+        106 :   0.0 :                                                               - Y[105] :  +Inf :   True
+        107 :   0.0 :                                                               - Y[106] :  +Inf :   True
+        108 :   0.0 :                                                               - Y[107] :  +Inf :   True
+        109 :   0.0 :                                                               - Y[108] :  +Inf :   True
+        110 :   0.0 :                                                          X[8] - Y[109] :  +Inf :   True
+        111 :   0.0 :                                                               - Y[110] :  +Inf :   True
+        112 :   0.0 :                                                               - Y[111] :  +Inf :   True
+        113 :   0.0 :                                                               - Y[112] :  +Inf :   True
+        114 :   0.0 :                                                               - Y[113] :  +Inf :   True
+        115 :   0.0 :                                                               - Y[114] :  +Inf :   True
+        116 :   0.0 :                                                               - Y[115] :  +Inf :   True
+        117 :   0.0 :                                                   X[7] + X[8] - Y[116] :  +Inf :   True
+        118 :   0.0 :                                                          X[2] - Y[117] :  +Inf :   True
+        119 :   0.0 :                                                               - Y[118] :  +Inf :   True
+        120 :   0.0 :                                                          X[0] - Y[119] :  +Inf :   True
+        121 :   0.0 :                                                   X[0] + X[7] - Y[120] :  +Inf :   True
+        122 :   0.0 :                                                          X[0] - Y[121] :  +Inf :   True
+        123 :   0.0 :                                                          X[8] - Y[122] :  +Inf :   True
+        124 :   0.0 :                                                               - Y[123] :  +Inf :   True
+        125 :   0.0 :                                                               - Y[124] :  +Inf :   True
+        126 :   0.0 :                                                               - Y[125] :  +Inf :   True
+        127 :   0.0 :                                                               - Y[126] :  +Inf :   True
+        128 :   0.0 :                                                               - Y[127] :  +Inf :   True
+        129 :   0.0 :                                                               - Y[128] :  +Inf :   True
+        130 :   0.0 :                                                               - Y[129] :  +Inf :   True
+        131 :   0.0 :                                                               - Y[130] :  +Inf :   True
+        132 :   0.0 :                                     X[0] + X[7] + X[8] + X[9] - Y[131] :  +Inf :   True
+        133 :   0.0 :        X[0] + X[1] + X[2] + X[3] + X[7] + X[8] + X[9] + X[10] - Y[132] :  +Inf :   True
+        134 :   0.0 :                       X[0] + X[2] + X[3] + X[7] + X[8] + X[9] - Y[133] :  +Inf :   True
+        135 :   0.0 :                                                   X[7] + X[8] - Y[134] :  +Inf :   True
+        136 :   0.0 :                                                               - Y[135] :  +Inf :   True
+        137 :   0.0 :                                                               - Y[136] :  +Inf :   True
+        138 :   0.0 :                                                               - Y[137] :  +Inf :   True
+        139 :   0.0 :                                                               - Y[138] :  +Inf :   True
+        140 :   0.0 :                                                          X[2] - Y[139] :  +Inf :   True
+        141 :   0.0 :                                                               - Y[140] :  +Inf :   True
+        142 :   0.0 :                                                               - Y[141] :  +Inf :   True
+        143 :   0.0 :                                                               - Y[142] :  +Inf :   True
+        144 :   0.0 :                                                               - Y[143] :  +Inf :   True
+        145 :   0.0 :                                                               - Y[144] :  +Inf :   True
+        146 :   0.0 :                                                          X[2] - Y[145] :  +Inf :   True
+        147 :   0.0 :                                                          X[0] - Y[146] :  +Inf :   True
+        148 :   0.0 :                                                   X[7] + X[8] - Y[147] :  +Inf :   True
+        149 :   0.0 :                                                               - Y[148] :  +Inf :   True
+        150 :   0.0 :                                            X[2] + X[7] + X[8] - Y[149] :  +Inf :   True
+        151 :   0.0 :                                                          X[7] - Y[150] :  +Inf :   True
+        152 :   0.0 :                                                          X[7] - Y[151] :  +Inf :   True
+        153 :   0.0 :                                                               - Y[152] :  +Inf :   True
+        154 :   0.0 :                                                               - Y[153] :  +Inf :   True
+        155 :   0.0 :                                                          X[8] - Y[154] :  +Inf :   True
+        156 :   0.0 :                                                               - Y[155] :  +Inf :   True
+        157 :   0.0 :                                                          X[0] - Y[156] :  +Inf :   True
+        158 :   0.0 :                                                               - Y[157] :  +Inf :   True
+        159 :   0.0 :                                                               - Y[158] :  +Inf :   True
+        160 :   0.0 :                                            X[2] + X[7] + X[8] - Y[159] :  +Inf :   True
+        161 :   0.0 :                                                          X[2] - Y[160] :  +Inf :   True
+        162 :   0.0 :                                                               - Y[161] :  +Inf :   True
+        163 :   0.0 :                                                               - Y[162] :  +Inf :   True
+        164 :   0.0 :                                                               - Y[163] :  +Inf :   True
+        165 :   0.0 :                                                               - Y[164] :  +Inf :   True
+        166 :   0.0 :                                                 X[12] + X[13] - Y[165] :  +Inf :   True
+        167 :   0.0 :                                                               - Y[166] :  +Inf :   True
+        168 :   0.0 :                                                         X[13] - Y[167] :  +Inf :   True
+        169 :   0.0 :                                                               - Y[168] :  +Inf :   True
+        170 :   0.0 :                                                               - Y[169] :  +Inf :   True
+        171 :   0.0 :                                                               - Y[170] :  +Inf :   True
+        172 :   0.0 :                                                          X[2] - Y[171] :  +Inf :   True
+        173 :   0.0 :                      X[0] + X[3] + X[7] + X[8] + X[9] + X[10] - Y[172] :  +Inf :   True
+        174 :   0.0 :                      X[2] + X[3] + X[7] + X[8] + X[9] + X[10] - Y[173] :  +Inf :   True
+        175 :   0.0 :                                                               - Y[174] :  +Inf :   True
+        176 :   0.0 :                                                               - Y[175] :  +Inf :   True
+        177 :   0.0 :                                                               - Y[176] :  +Inf :   True
+        178 :   0.0 :                                                          X[2] - Y[177] :  +Inf :   True
+        179 :   0.0 :                                                               - Y[178] :  +Inf :   True
+        180 :   0.0 :                                                          X[9] - Y[179] :  +Inf :   True
+        181 :   0.0 :                                                   X[2] + X[9] - Y[180] :  +Inf :   True
+        182 :   0.0 :                                                               - Y[181] :  +Inf :   True
+        183 :   0.0 :                                            X[0] + X[2] + X[9] - Y[182] :  +Inf :   True
+        184 :   0.0 :                                                               - Y[183] :  +Inf :   True
+        185 :   0.0 :                                                               - Y[184] :  +Inf :   True
+        186 :   0.0 :                                                               - Y[185] :  +Inf :   True
+        187 :   0.0 :                                                          X[2] - Y[186] :  +Inf :   True
+        188 :   0.0 :                                                               - Y[187] :  +Inf :   True
+        189 :   0.0 :                                                               - Y[188] :  +Inf :   True
+        190 :   0.0 :                                                   X[2] + X[9] - Y[189] :  +Inf :   True
+        191 :   0.0 :                                                               - Y[190] :  +Inf :   True
+        192 :   0.0 :                                                               - Y[191] :  +Inf :   True
+        193 :   0.0 :                                                               - Y[192] :  +Inf :   True
+        194 :   0.0 :                                                          X[8] - Y[193] :  +Inf :   True
+        195 :   0.0 :                                                          X[8] - Y[194] :  +Inf :   True
+        196 :   0.0 :                                                               - Y[195] :  +Inf :   True
+        197 :   0.0 :                                                          X[7] - Y[196] :  +Inf :   True
+        198 :   0.0 :                                                               - Y[197] :  +Inf :   True
+        199 :   0.0 :                                                   X[0] + X[7] - Y[198] :  +Inf :   True
+        200 :   0.0 :                                                          X[7] - Y[199] :  +Inf :   True
+        201 :   0.0 :                                                          X[7] - Y[200] :  +Inf :   True
+        202 :   0.0 :                                                               - Y[201] :  +Inf :   True
+        203 :   0.0 :                                            X[2] + X[7] + X[8] - Y[202] :  +Inf :   True
+        204 :   0.0 :                                                               - Y[203] :  +Inf :   True
+        205 :   0.0 :                                                               - Y[204] :  +Inf :   True
+        206 :   0.0 :                                                               - Y[205] :  +Inf :   True
+        207 :   0.0 :                                                               - Y[206] :  +Inf :   True
+        208 :   0.0 :                                                               - Y[207] :  +Inf :   True
+        209 :   0.0 :                                                               - Y[208] :  +Inf :   True
+        210 :   0.0 :                                                               - Y[209] :  +Inf :   True
+        211 :   0.0 :                                                               - Y[210] :  +Inf :   True
+        212 :   0.0 :                                                               - Y[211] :  +Inf :   True
+        213 :   0.0 :                                                               - Y[212] :  +Inf :   True
+        214 :   0.0 :                                                               - Y[213] :  +Inf :   True
+        215 :   0.0 :                                                          X[2] - Y[214] :  +Inf :   True
+        216 :   0.0 :                                                               - Y[215] :  +Inf :   True
+        217 :   0.0 :                                                               - Y[216] :  +Inf :   True
+        218 :   0.0 :                                                               - Y[217] :  +Inf :   True
+        219 :   0.0 :                                                               - Y[218] :  +Inf :   True
+        220 :   0.0 :                                                          X[9] - Y[219] :  +Inf :   True
+        221 :   0.0 :                                                          X[9] - Y[220] :  +Inf :   True
+        222 :   0.0 :                                                               - Y[221] :  +Inf :   True
+        223 :   0.0 :                                                               - Y[222] :  +Inf :   True
+        224 :   0.0 :                                                               - Y[223] :  +Inf :   True
+        225 :   0.0 :                                                               - Y[224] :  +Inf :   True
+        226 :   0.0 :                                                   X[0] + X[7] - Y[225] :  +Inf :   True
+        227 :   0.0 :                                                          X[8] - Y[226] :  +Inf :   True
+        228 :   0.0 :                                                   X[7] + X[8] - Y[227] :  +Inf :   True
+        229 :   0.0 :                                                               - Y[228] :  +Inf :   True
+        230 :   0.0 :                                                               - Y[229] :  +Inf :   True
+        231 :   0.0 :                                                               - Y[230] :  +Inf :   True
+        232 :   0.0 :                                                   X[7] + X[8] - Y[231] :  +Inf :   True
+        233 :   0.0 :                                     X[0] + X[2] + X[7] + X[8] - Y[232] :  +Inf :   True
+        234 :   0.0 :                                                               - Y[233] :  +Inf :   True
+        235 :   0.0 :                                                               - Y[234] :  +Inf :   True
+        236 :   0.0 :                                                               - Y[235] :  +Inf :   True
+        237 :   0.0 :                                                               - Y[236] :  +Inf :   True
+        238 :   0.0 :                                                               - Y[237] :  +Inf :   True
+        239 :   0.0 :                                                               - Y[238] :  +Inf :   True
+        240 :   0.0 :                                                 X[13] + X[14] - Y[239] :  +Inf :   True
+        241 :   0.0 :                                                               - Y[240] :  +Inf :   True
+        242 :   0.0 :                                                               - Y[241] :  +Inf :   True
+        243 :   0.0 :                                                               - Y[242] :  +Inf :   True
+        244 :   0.0 :                                                         X[13] - Y[243] :  +Inf :   True
+        245 :   0.0 :                                                               - Y[244] :  +Inf :   True
+        246 :   0.0 :                                                               - Y[245] :  +Inf :   True
+        247 :   0.0 :                                                               - Y[246] :  +Inf :   True
+        248 :   0.0 :                                                               - Y[247] :  +Inf :   True
+        249 :   0.0 :                                                          X[7] - Y[248] :  +Inf :   True
+        250 :   0.0 :                                                          X[9] - Y[249] :  +Inf :   True
+        251 :   0.0 :                                     X[2] + X[3] + X[7] + X[8] - Y[250] :  +Inf :   True
+        252 :   0.0 :                                                               - Y[251] :  +Inf :   True
+        253 :   0.0 :                                                               - Y[252] :  +Inf :   True
+        254 :   0.0 :                                                          X[2] - Y[253] :  +Inf :   True
+        255 :   0.0 :                                                          X[2] - Y[254] :  +Inf :   True
+        256 :   0.0 :                                                         X[10] - Y[255] :  +Inf :   True
+        257 :   0.0 :                                                   X[2] + X[9] - Y[256] :  +Inf :   True
+        258 :   0.0 :                                                               - Y[257] :  +Inf :   True
+        259 :   0.0 :                                                               - Y[258] :  +Inf :   True
+        260 :   0.0 :                                                          X[1] - Y[259] :  +Inf :   True
+        261 :   0.0 :                                    X[1] + X[2] + X[9] + X[10] - Y[260] :  +Inf :   True
+        262 :   0.0 :                                                               - Y[261] :  +Inf :   True
+        263 :   0.0 :                                                               - Y[262] :  +Inf :   True
+        264 :   0.0 :                                                               - Y[263] :  +Inf :   True
+        265 :   0.0 :                                                               - Y[264] :  +Inf :   True
+        266 :   0.0 :                                                   X[7] + X[8] - Y[265] :  +Inf :   True
+        267 :   0.0 :                                                          X[8] - Y[266] :  +Inf :   True
+        268 :   0.0 :                                                               - Y[267] :  +Inf :   True
+        269 :   0.0 :                                                               - Y[268] :  +Inf :   True
+        270 :   0.0 :                                                               - Y[269] :  +Inf :   True
+        271 :   0.0 :                                                          X[7] - Y[270] :  +Inf :   True
+        272 :   0.0 :                                                               - Y[271] :  +Inf :   True
+        273 :   0.0 :                                                               - Y[272] :  +Inf :   True
+        274 :   0.0 :                                                   X[7] + X[8] - Y[273] :  +Inf :   True
+        275 :   0.0 :                                     X[0] + X[2] + X[7] + X[8] - Y[274] :  +Inf :   True
+        276 :   0.0 :                                                               - Y[275] :  +Inf :   True
+        277 :   0.0 :                                                         X[13] - Y[276] :  +Inf :   True
+        278 :   0.0 :                                                               - Y[277] :  +Inf :   True
+        279 :   0.0 :                                                         X[13] - Y[278] :  +Inf :   True
+        280 :   0.0 :                                                               - Y[279] :  +Inf :   True
+        281 :   0.0 :                                                         X[12] - Y[280] :  +Inf :   True
+        282 :   0.0 :                                                               - Y[281] :  +Inf :   True
+        283 :   0.0 :                                                               - Y[282] :  +Inf :   True
+        284 :   0.0 :                                                               - Y[283] :  +Inf :   True
+        285 :   0.0 :                                                               - Y[284] :  +Inf :   True
+        286 :   0.0 :                                                               - Y[285] :  +Inf :   True
+        287 :   0.0 :                                                         X[13] - Y[286] :  +Inf :   True
+        288 :   0.0 :                                                               - Y[287] :  +Inf :   True
+        289 :   0.0 :                                                               - Y[288] :  +Inf :   True
+        290 :   0.0 :                                           X[7] + X[9] + X[10] - Y[289] :  +Inf :   True
+        291 :   0.0 :                                                               - Y[290] :  +Inf :   True
+        292 :   0.0 :                                                               - Y[291] :  +Inf :   True
+        293 :   0.0 :                                                   X[7] + X[8] - Y[292] :  +Inf :   True
+        294 :   0.0 :                                                   X[7] + X[8] - Y[293] :  +Inf :   True
+        295 :   0.0 :                                                  X[2] + X[10] - Y[294] :  +Inf :   True
+        296 :   0.0 :                                                               - Y[295] :  +Inf :   True
+        297 :   0.0 :                                                          X[2] - Y[296] :  +Inf :   True
+        298 :   0.0 :                                                          X[8] - Y[297] :  +Inf :   True
+        299 :   0.0 :                                                          X[8] - Y[298] :  +Inf :   True
+        300 :   0.0 :                                                               - Y[299] :  +Inf :   True
+        301 :   0.0 :                                                               - Y[300] :  +Inf :   True
+        302 :   0.0 :                                                          X[7] - Y[301] :  +Inf :   True
+        303 :   0.0 :                                                               - Y[302] :  +Inf :   True
+        304 :   0.0 :                                                               - Y[303] :  +Inf :   True
+        305 :   0.0 :                                                          X[0] - Y[304] :  +Inf :   True
+        306 :   0.0 :                                                               - Y[305] :  +Inf :   True
+        307 :   0.0 :                                                               - Y[306] :  +Inf :   True
+        308 :   0.0 :                                                               - Y[307] :  +Inf :   True
+        309 :   0.0 :                                                               - Y[308] :  +Inf :   True
+        310 :   0.0 :                                                               - Y[309] :  +Inf :   True
+        311 :   0.0 :                                                               - Y[310] :  +Inf :   True
+        312 :   0.0 :                                                 X[13] + X[14] - Y[311] :  +Inf :   True
+        313 :   0.0 :                                         X[12] + X[13] + X[14] - Y[312] :  +Inf :   True
+        314 :   0.0 :                                         X[12] + X[13] + X[14] - Y[313] :  +Inf :   True
+        315 :   0.0 :                                                               - Y[314] :  +Inf :   True
+        316 :   0.0 :                                                               - Y[315] :  +Inf :   True
+        317 :   0.0 :                                                               - Y[316] :  +Inf :   True
+        318 :   0.0 :                                                               - Y[317] :  +Inf :   True
+        319 :   0.0 :                                                         X[13] - Y[318] :  +Inf :   True
+        320 :   0.0 :                                                 X[12] + X[13] - Y[319] :  +Inf :   True
+        321 :   0.0 :                                                               - Y[320] :  +Inf :   True
+        322 :   0.0 :                                                               - Y[321] :  +Inf :   True
+        323 :   0.0 :                                                   X[3] + X[7] - Y[322] :  +Inf :   True
+        324 :   0.0 :                                                               - Y[323] :  +Inf :   True
+        325 :   0.0 :                                                               - Y[324] :  +Inf :   True
+        326 :   0.0 :                                                               - Y[325] :  +Inf :   True
+        327 :   0.0 :                                                               - Y[326] :  +Inf :   True
+        328 :   0.0 :                                                         X[10] - Y[327] :  +Inf :   True
+        329 :   0.0 :                                            X[7] + X[8] + X[9] - Y[328] :  +Inf :   True
+        330 :   0.0 :                                                               - Y[329] :  +Inf :   True
+        331 :   0.0 :                                                  X[9] + X[10] - Y[330] :  +Inf :   True
+        332 :   0.0 :                                           X[7] + X[8] + X[10] - Y[331] :  +Inf :   True
+        333 :   0.0 :                                                               - Y[332] :  +Inf :   True
+        334 :   0.0 :                                                  X[1] + X[10] - Y[333] :  +Inf :   True
+        335 :   0.0 :                                                  X[1] + X[10] - Y[334] :  +Inf :   True
+        336 :   0.0 :                                                          X[7] - Y[335] :  +Inf :   True
+        337 :   0.0 :                                                               - Y[336] :  +Inf :   True
+        338 :   0.0 :                                                          X[2] - Y[337] :  +Inf :   True
+        339 :   0.0 :                                            X[0] + X[7] + X[8] - Y[338] :  +Inf :   True
+        340 :   0.0 :                                                               - Y[339] :  +Inf :   True
+        341 :   0.0 :                                                          X[8] - Y[340] :  +Inf :   True
+        342 :   0.0 :                                                               - Y[341] :  +Inf :   True
+        343 :   0.0 :                                                          X[7] - Y[342] :  +Inf :   True
+        344 :   0.0 :                                                   X[7] + X[8] - Y[343] :  +Inf :   True
+        345 :   0.0 :                                            X[0] + X[7] + X[8] - Y[344] :  +Inf :   True
+        346 :   0.0 :                                                               - Y[345] :  +Inf :   True
+        347 :   0.0 :                                                               - Y[346] :  +Inf :   True
+        348 :   0.0 :                                                               - Y[347] :  +Inf :   True
+        349 :   0.0 :                                                               - Y[348] :  +Inf :   True
+        350 :   0.0 :                                                 X[12] + X[13] - Y[349] :  +Inf :   True
+        351 :   0.0 :                                                               - Y[350] :  +Inf :   True
+        352 :   0.0 :                                                               - Y[351] :  +Inf :   True
+        353 :   0.0 :                                                               - Y[352] :  +Inf :   True
+        354 :   0.0 :                                                 X[12] + X[13] - Y[353] :  +Inf :   True
+        355 :   0.0 :                                                               - Y[354] :  +Inf :   True
+        356 :   0.0 :                                                               - Y[355] :  +Inf :   True
+        357 :   0.0 :                                                         X[12] - Y[356] :  +Inf :   True
+        358 :   0.0 :                                                  X[3] + X[12] - Y[357] :  +Inf :   True
+        359 :   0.0 :                                                 X[12] + X[13] - Y[358] :  +Inf :   True
+        360 :   0.0 :                                                               - Y[359] :  +Inf :   True
+        361 :   0.0 :                                                               - Y[360] :  +Inf :   True
+        362 :   0.0 :                                                   X[3] + X[4] - Y[361] :  +Inf :   True
+        363 :   0.0 :                                                               - Y[362] :  +Inf :   True
+        364 :   0.0 :                                    X[3] + X[7] + X[8] + X[10] - Y[363] :  +Inf :   True
+        365 :   0.0 :                                    X[3] + X[7] + X[8] + X[10] - Y[364] :  +Inf :   True
+        366 :   0.0 :                                                          X[9] - Y[365] :  +Inf :   True
+        367 :   0.0 :                                                         X[10] - Y[366] :  +Inf :   True
+        368 :   0.0 :                                                   X[2] + X[9] - Y[367] :  +Inf :   True
+        369 :   0.0 :                                                          X[2] - Y[368] :  +Inf :   True
+        370 :   0.0 :                                                   X[2] + X[9] - Y[369] :  +Inf :   True
+        371 :   0.0 :                                                   X[7] + X[8] - Y[370] :  +Inf :   True
+        372 :   0.0 :                                                         X[10] - Y[371] :  +Inf :   True
+        373 :   0.0 :                                           X[1] + X[2] + X[10] - Y[372] :  +Inf :   True
+        374 :   0.0 :                                            X[1] + X[2] + X[8] - Y[373] :  +Inf :   True
+        375 :   0.0 :                                                   X[7] + X[8] - Y[374] :  +Inf :   True
+        376 :   0.0 :                                                               - Y[375] :  +Inf :   True
+        377 :   0.0 :                                          X[3] + X[13] + X[14] - Y[376] :  +Inf :   True
+        378 :   0.0 :                                                               - Y[377] :  +Inf :   True
+        379 :   0.0 :                                                               - Y[378] :  +Inf :   True
+        380 :   0.0 :                                                               - Y[379] :  +Inf :   True
+        381 :   0.0 :                                                               - Y[380] :  +Inf :   True
+        382 :   0.0 :                                                               - Y[381] :  +Inf :   True
+        383 :   0.0 :                                                               - Y[382] :  +Inf :   True
+        384 :   0.0 :                                                 X[12] + X[13] - Y[383] :  +Inf :   True
+        385 :   0.0 :                                                               - Y[384] :  +Inf :   True
+        386 :   0.0 :                                                               - Y[385] :  +Inf :   True
+        387 :   0.0 :                                                               - Y[386] :  +Inf :   True
+        388 :   0.0 :                                                 X[12] + X[13] - Y[387] :  +Inf :   True
+        389 :   0.0 :                                                               - Y[388] :  +Inf :   True
+        390 :   0.0 :                                                               - Y[389] :  +Inf :   True
+        391 :   0.0 :                                                  X[3] + X[12] - Y[390] :  +Inf :   True
+        392 :   0.0 :                                          X[4] + X[14] + X[15] - Y[391] :  +Inf :   True
+        393 :   0.0 :                                                               - Y[392] :  +Inf :   True
+        394 :   0.0 :                                                               - Y[393] :  +Inf :   True
+        395 :   0.0 :                                                          X[4] - Y[394] :  +Inf :   True
+        396 :   0.0 :                                            X[3] + X[4] + X[6] - Y[395] :  +Inf :   True
+        397 :   0.0 :                                                          X[6] - Y[396] :  +Inf :   True
+        398 :   0.0 :                                                               - Y[397] :  +Inf :   True
+        399 :   0.0 :                     X[3] + X[4] + X[6] + X[7] + X[13] + X[15] - Y[398] :  +Inf :   True
+        400 :   0.0 :                                                         X[10] - Y[399] :  +Inf :   True
+        401 :   0.0 :                                                               - Y[400] :  +Inf :   True
+        402 :   0.0 :                                                          X[2] - Y[401] :  +Inf :   True
+        403 :   0.0 :                                                         X[10] - Y[402] :  +Inf :   True
+        404 :   0.0 :                                                               - Y[403] :  +Inf :   True
+        405 :   0.0 :                                                               - Y[404] :  +Inf :   True
+        406 :   0.0 :                                                               - Y[405] :  +Inf :   True
+        407 :   0.0 :                                            X[3] + X[7] + X[8] - Y[406] :  +Inf :   True
+        408 :   0.0 :                                                               - Y[407] :  +Inf :   True
+        409 :   0.0 :                                                               - Y[408] :  +Inf :   True
+        410 :   0.0 :                                                               - Y[409] :  +Inf :   True
+        411 :   0.0 :                                                               - Y[410] :  +Inf :   True
+        412 :   0.0 :                                                               - Y[411] :  +Inf :   True
+        413 :   0.0 :                                                               - Y[412] :  +Inf :   True
+        414 :   0.0 :                                                               - Y[413] :  +Inf :   True
+        415 :   0.0 :                                                               - Y[414] :  +Inf :   True
+        416 :   0.0 :                                                               - Y[415] :  +Inf :   True
+        417 :   0.0 :                                                 X[12] + X[13] - Y[416] :  +Inf :   True
+        418 :   0.0 :                                                               - Y[417] :  +Inf :   True
+        419 :   0.0 :                                                 X[12] + X[13] - Y[418] :  +Inf :   True
+        420 :   0.0 :                                                               - Y[419] :  +Inf :   True
+        421 :   0.0 :                                                               - Y[420] :  +Inf :   True
+        422 :   0.0 :                                                               - Y[421] :  +Inf :   True
+        423 :   0.0 :                                                               - Y[422] :  +Inf :   True
+        424 :   0.0 :                                                 X[12] + X[13] - Y[423] :  +Inf :   True
+        425 :   0.0 :                                                               - Y[424] :  +Inf :   True
+        426 :   0.0 :                                                          X[4] - Y[425] :  +Inf :   True
+        427 :   0.0 :                                                               - Y[426] :  +Inf :   True
+        428 :   0.0 :                                                               - Y[427] :  +Inf :   True
+        429 :   0.0 :                                                               - Y[428] :  +Inf :   True
+        430 :   0.0 :                                                               - Y[429] :  +Inf :   True
+        431 :   0.0 :                                                               - Y[430] :  +Inf :   True
+        432 :   0.0 :                                                          X[3] - Y[431] :  +Inf :   True
+        433 :   0.0 :                                                          X[4] - Y[432] :  +Inf :   True
+        434 :   0.0 :                                            X[3] + X[4] + X[6] - Y[433] :  +Inf :   True
+        435 :   0.0 :                                                         X[15] - Y[434] :  +Inf :   True
+        436 :   0.0 :                                                   X[4] + X[6] - Y[435] :  +Inf :   True
+        437 :   0.0 :                                                   X[8] + X[9] - Y[436] :  +Inf :   True
+        438 :   0.0 :                                                          X[9] - Y[437] :  +Inf :   True
+        439 :   0.0 :                                                         X[10] - Y[438] :  +Inf :   True
+        440 :   0.0 :                              X[2] + X[3] + X[7] + X[8] + X[9] - Y[439] :  +Inf :   True
+        441 :   0.0 :                                                               - Y[440] :  +Inf :   True
+        442 :   0.0 :                                                               - Y[441] :  +Inf :   True
+        443 :   0.0 :                                                               - Y[442] :  +Inf :   True
+        444 :   0.0 :                                                               - Y[443] :  +Inf :   True
+        445 :   0.0 :                                                               - Y[444] :  +Inf :   True
+        446 :   0.0 :                                                               - Y[445] :  +Inf :   True
+        447 :   0.0 :                                                               - Y[446] :  +Inf :   True
+        448 :   0.0 :                                                 X[12] + X[13] - Y[447] :  +Inf :   True
+        449 :   0.0 :                                                 X[12] + X[13] - Y[448] :  +Inf :   True
+        450 :   0.0 :                                                               - Y[449] :  +Inf :   True
+        451 :   0.0 :                                                               - Y[450] :  +Inf :   True
+        452 :   0.0 :                                                               - Y[451] :  +Inf :   True
+        453 :   0.0 :                                                               - Y[452] :  +Inf :   True
+        454 :   0.0 :                                                               - Y[453] :  +Inf :   True
+        455 :   0.0 :                                                          X[3] - Y[454] :  +Inf :   True
+        456 :   0.0 :                                                               - Y[455] :  +Inf :   True
+        457 :   0.0 :                                                         X[12] - Y[456] :  +Inf :   True
+        458 :   0.0 :                                                               - Y[457] :  +Inf :   True
+        459 :   0.0 :                                                               - Y[458] :  +Inf :   True
+        460 :   0.0 :                            X[3] + X[4] + X[5] + X[14] + X[15] - Y[459] :  +Inf :   True
+        461 :   0.0 :                                                  X[3] + X[12] - Y[460] :  +Inf :   True
+        462 :   0.0 :                    X[3] + X[4] + X[5] + X[12] + X[14] + X[15] - Y[461] :  +Inf :   True
+        463 :   0.0 :                    X[3] + X[4] + X[5] + X[12] + X[14] + X[15] - Y[462] :  +Inf :   True
+        464 :   0.0 :                                                  X[3] + X[12] - Y[463] :  +Inf :   True
+        465 :   0.0 :                                                               - Y[464] :  +Inf :   True
+        466 :   0.0 :                                                               - Y[465] :  +Inf :   True
+        467 :   0.0 :                            X[3] + X[4] + X[6] + X[13] + X[15] - Y[466] :  +Inf :   True
+        468 :   0.0 :                                                               - Y[467] :  +Inf :   True
+        469 :   0.0 :                                                               - Y[468] :  +Inf :   True
+        470 :   0.0 :                                                   X[4] + X[6] - Y[469] :  +Inf :   True
+        471 :   0.0 :                                                         X[10] - Y[470] :  +Inf :   True
+        472 :   0.0 :                                                         X[10] - Y[471] :  +Inf :   True
+        473 :   0.0 :                                                               - Y[472] :  +Inf :   True
+        474 :   0.0 :                                                               - Y[473] :  +Inf :   True
+        475 :   0.0 :                                                               - Y[474] :  +Inf :   True
+        476 :   0.0 :                                                               - Y[475] :  +Inf :   True
+        477 :   0.0 :                                                               - Y[476] :  +Inf :   True
+        478 :   0.0 :                                                               - Y[477] :  +Inf :   True
+        479 :   0.0 :                                                               - Y[478] :  +Inf :   True
+        480 :   0.0 :                                                         X[12] - Y[479] :  +Inf :   True
+        481 :   0.0 :                                                               - Y[480] :  +Inf :   True
+        482 :   0.0 :                                                               - Y[481] :  +Inf :   True
+        483 :   0.0 :                                                               - Y[482] :  +Inf :   True
+        484 :   0.0 :                                                          X[3] - Y[483] :  +Inf :   True
+        485 :   0.0 :                                                               - Y[484] :  +Inf :   True
+        486 :   0.0 :                                                               - Y[485] :  +Inf :   True
+        487 :   0.0 :                                                          X[3] - Y[486] :  +Inf :   True
+        488 :   0.0 :                                                               - Y[487] :  +Inf :   True
+        489 :   0.0 :                                                         X[13] - Y[488] :  +Inf :   True
+        490 :   0.0 :                                                         X[13] - Y[489] :  +Inf :   True
+        491 :   0.0 :                                                         X[13] - Y[490] :  +Inf :   True
+        492 :   0.0 :                                    X[3] + X[4] + X[5] + X[14] - Y[491] :  +Inf :   True
+        493 :   0.0 :                                          X[4] + X[14] + X[15] - Y[492] :  +Inf :   True
+        494 :   0.0 :                                   X[3] + X[4] + X[14] + X[15] - Y[493] :  +Inf :   True
+        495 :   0.0 :                           X[3] + X[4] + X[12] + X[14] + X[15] - Y[494] :  +Inf :   True
+        496 :   0.0 :                                                          X[4] - Y[495] :  +Inf :   True
+        497 :   0.0 :                                                   X[3] + X[4] - Y[496] :  +Inf :   True
+        498 :   0.0 :                                                          X[4] - Y[497] :  +Inf :   True
+        499 :   0.0 :                                           X[4] + X[6] + X[13] - Y[498] :  +Inf :   True
+        500 :   0.0 :                                                               - Y[499] :  +Inf :   True
+        501 :   0.0 :                                                          X[6] - Y[500] :  +Inf :   True
+        502 :   0.0 :                                   X[4] + X[6] + X[13] + X[15] - Y[501] :  +Inf :   True
+        503 :   0.0 :                                                               - Y[502] :  +Inf :   True
+        504 :   0.0 :                             X[1] + X[3] + X[7] + X[8] + X[10] - Y[503] :  +Inf :   True
+        505 :   0.0 :                             X[1] + X[3] + X[7] + X[8] + X[10] - Y[504] :  +Inf :   True
+        506 :   0.0 :                                                          X[3] - Y[505] :  +Inf :   True
+        507 :   0.0 :                                                 X[12] + X[13] - Y[506] :  +Inf :   True
+        508 :   0.0 :                                                               - Y[507] :  +Inf :   True
+        509 :   0.0 :                                                               - Y[508] :  +Inf :   True
+        510 :   0.0 :                                                               - Y[509] :  +Inf :   True
+        511 :   0.0 :                                                               - Y[510] :  +Inf :   True
+        512 :   0.0 :                                                               - Y[511] :  +Inf :   True
+        513 :   0.0 :                                                               - Y[512] :  +Inf :   True
+        514 :   0.0 :                                                               - Y[513] :  +Inf :   True
+        515 :   0.0 :                                                  X[3] + X[12] - Y[514] :  +Inf :   True
+        516 :   0.0 :                                                 X[13] + X[14] - Y[515] :  +Inf :   True
+        517 :   0.0 :                                                 X[13] + X[14] - Y[516] :  +Inf :   True
+        518 :   0.0 :                                                               - Y[517] :  +Inf :   True
+        519 :   0.0 :                                                         X[13] - Y[518] :  +Inf :   True
+        520 :   0.0 :                                                               - Y[519] :  +Inf :   True
+        521 :   0.0 :                                          X[4] + X[14] + X[15] - Y[520] :  +Inf :   True
+        522 :   0.0 :                                   X[3] + X[4] + X[14] + X[15] - Y[521] :  +Inf :   True
+        523 :   0.0 :                                                               - Y[522] :  +Inf :   True
+        524 :   0.0 :                                                          X[3] - Y[523] :  +Inf :   True
+        525 :   0.0 :                                                  X[5] + X[13] - Y[524] :  +Inf :   True
+        526 :   0.0 :                                   X[3] + X[4] + X[12] + X[15] - Y[525] :  +Inf :   True
+        527 :   0.0 :                                                         X[13] - Y[526] :  +Inf :   True
+        528 :   0.0 :                                           X[4] + X[6] + X[15] - Y[527] :  +Inf :   True
+        529 :   0.0 :                                                         X[13] - Y[528] :  +Inf :   True
+        530 :   0.0 :                                                               - Y[529] :  +Inf :   True
+        531 :   0.0 :                                                               - Y[530] :  +Inf :   True
+        532 :   0.0 :                                           X[1] + X[7] + X[10] - Y[531] :  +Inf :   True
+        533 :   0.0 :                                                          X[3] - Y[532] :  +Inf :   True
+        534 :   0.0 :                                                               - Y[533] :  +Inf :   True
+        535 :   0.0 :                                                 X[12] + X[13] - Y[534] :  +Inf :   True
+        536 :   0.0 :                                                               - Y[535] :  +Inf :   True
+        537 :   0.0 :                                                               - Y[536] :  +Inf :   True
+        538 :   0.0 :                                                         X[12] - Y[537] :  +Inf :   True
+        539 :   0.0 :                                                          X[3] - Y[538] :  +Inf :   True
+        540 :   0.0 :                                                               - Y[539] :  +Inf :   True
+        541 :   0.0 :                                                               - Y[540] :  +Inf :   True
+        542 :   0.0 :                                                  X[3] + X[12] - Y[541] :  +Inf :   True
+        543 :   0.0 :                                                               - Y[542] :  +Inf :   True
+        544 :   0.0 :                                                               - Y[543] :  +Inf :   True
+        545 :   0.0 :                                                         X[13] - Y[544] :  +Inf :   True
+        546 :   0.0 :                                                               - Y[545] :  +Inf :   True
+        547 :   0.0 :                                                          X[4] - Y[546] :  +Inf :   True
+        548 :   0.0 :                                                         X[14] - Y[547] :  +Inf :   True
+        549 :   0.0 :                                                  X[5] + X[14] - Y[548] :  +Inf :   True
+        550 :   0.0 :                                                               - Y[549] :  +Inf :   True
+        551 :   0.0 :                                   X[3] + X[4] + X[14] + X[15] - Y[550] :  +Inf :   True
+        552 :   0.0 :                                                               - Y[551] :  +Inf :   True
+        553 :   0.0 :                                                               - Y[552] :  +Inf :   True
+        554 :   0.0 :                                                          X[5] - Y[553] :  +Inf :   True
+        555 :   0.0 :                                                               - Y[554] :  +Inf :   True
+        556 :   0.0 :                           X[3] + X[4] + X[12] + X[13] + X[15] - Y[555] :  +Inf :   True
+        557 :   0.0 :                                                               - Y[556] :  +Inf :   True
+        558 :   0.0 :                                                               - Y[557] :  +Inf :   True
+        559 :   0.0 :                                                               - Y[558] :  +Inf :   True
+        560 :   0.0 :                                                         X[12] - Y[559] :  +Inf :   True
+        561 :   0.0 :                                                          X[3] - Y[560] :  +Inf :   True
+        562 :   0.0 :                                          X[3] + X[12] + X[13] - Y[561] :  +Inf :   True
+        563 :   0.0 :                                                          X[3] - Y[562] :  +Inf :   True
+        564 :   0.0 :                                                               - Y[563] :  +Inf :   True
+        565 :   0.0 :                                                               - Y[564] :  +Inf :   True
+        566 :   0.0 :                                          X[3] + X[13] + X[14] - Y[565] :  +Inf :   True
+        567 :   0.0 :                                                               - Y[566] :  +Inf :   True
+        568 :   0.0 :                                                               - Y[567] :  +Inf :   True
+        569 :   0.0 :                                                 X[13] + X[14] - Y[568] :  +Inf :   True
+        570 :   0.0 :                                                               - Y[569] :  +Inf :   True
+        571 :   0.0 :                                                         X[13] - Y[570] :  +Inf :   True
+        572 :   0.0 :                                                          X[4] - Y[571] :  +Inf :   True
+        573 :   0.0 :                                          X[4] + X[14] + X[15] - Y[572] :  +Inf :   True
+        574 :   0.0 :                                          X[4] + X[14] + X[15] - Y[573] :  +Inf :   True
+        575 :   0.0 :                                                               - Y[574] :  +Inf :   True
+        576 :   0.0 :                                                          X[5] - Y[575] :  +Inf :   True
+        577 :   0.0 :                                   X[3] + X[4] + X[14] + X[15] - Y[576] :  +Inf :   True
+        578 :   0.0 :                                                               - Y[577] :  +Inf :   True
+        579 :   0.0 :                                    X[3] + X[4] + X[6] + X[15] - Y[578] :  +Inf :   True
+        580 :   0.0 :                                                          X[6] - Y[579] :  +Inf :   True
+        581 :   0.0 :                                                               - Y[580] :  +Inf :   True
+        582 :   0.0 :                                                  X[3] + X[12] - Y[581] :  +Inf :   True
+        583 :   0.0 :                                                               - Y[582] :  +Inf :   True
+        584 :   0.0 :                                                               - Y[583] :  +Inf :   True
+        585 :   0.0 :                                                               - Y[584] :  +Inf :   True
+        586 :   0.0 :                                                               - Y[585] :  +Inf :   True
+        587 :   0.0 :                                                               - Y[586] :  +Inf :   True
+        588 :   0.0 :                                                               - Y[587] :  +Inf :   True
+        589 :   0.0 :                                                               - Y[588] :  +Inf :   True
+        590 :   0.0 :                                                               - Y[589] :  +Inf :   True
+        591 :   0.0 :                                                               - Y[590] :  +Inf :   True
+        592 :   0.0 :                                          X[5] + X[13] + X[14] - Y[591] :  +Inf :   True
+        593 :   0.0 :                                         X[13] + X[14] + X[15] - Y[592] :  +Inf :   True
+        594 :   0.0 :                                                               - Y[593] :  +Inf :   True
+        595 :   0.0 :                                                               - Y[594] :  +Inf :   True
+        596 :   0.0 :                                                               - Y[595] :  +Inf :   True
+        597 :   0.0 :                                                 X[13] + X[14] - Y[596] :  +Inf :   True
+        598 :   0.0 :                           X[4] + X[5] + X[13] + X[14] + X[15] - Y[597] :  +Inf :   True
+        599 :   0.0 :                                                         X[14] - Y[598] :  +Inf :   True
+        600 :   0.0 :                                           X[4] + X[5] + X[15] - Y[599] :  +Inf :   True
+        601 :   0.0 :                                                   X[4] + X[5] - Y[600] :  +Inf :   True
+        602 :   0.0 :                                                               - Y[601] :  +Inf :   True
+        603 :   0.0 :                             X[3] + X[4] + X[5] + X[6] + X[15] - Y[602] :  +Inf :   True
+        604 :   0.0 :                             X[3] + X[4] + X[5] + X[6] + X[15] - Y[603] :  +Inf :   True
+        605 :   0.0 :                                                         X[13] - Y[604] :  +Inf :   True
+        606 :   0.0 :                                                         X[12] - Y[605] :  +Inf :   True
+        607 :   0.0 :                                                               - Y[606] :  +Inf :   True
+        608 :   0.0 :                                                               - Y[607] :  +Inf :   True
+        609 :   0.0 :                                                               - Y[608] :  +Inf :   True
+        610 :   0.0 :                                                               - Y[609] :  +Inf :   True
+        611 :   0.0 :                                                               - Y[610] :  +Inf :   True
+        612 :   0.0 :                                                               - Y[611] :  +Inf :   True
+        613 :   0.0 :                                                               - Y[612] :  +Inf :   True
+        614 :   0.0 :                                                               - Y[613] :  +Inf :   True
+        615 :   0.0 :                                                  X[4] + X[15] - Y[614] :  +Inf :   True
+        616 :   0.0 :                                                               - Y[615] :  +Inf :   True
+        617 :   0.0 :                                                 X[13] + X[14] - Y[616] :  +Inf :   True
+        618 :   0.0 :                                                               - Y[617] :  +Inf :   True
+        619 :   0.0 :                                                          X[4] - Y[618] :  +Inf :   True
+        620 :   0.0 :                                                               - Y[619] :  +Inf :   True
+        621 :   0.0 :                                                 X[13] + X[14] - Y[620] :  +Inf :   True
+        622 :   0.0 :                                                 X[13] + X[14] - Y[621] :  +Inf :   True
+        623 :   0.0 :                                                          X[4] - Y[622] :  +Inf :   True
+        624 :   0.0 :                                           X[4] + X[5] + X[13] - Y[623] :  +Inf :   True
+        625 :   0.0 :                                    X[4] + X[5] + X[6] + X[15] - Y[624] :  +Inf :   True
+        626 :   0.0 :                                                               - Y[625] :  +Inf :   True
+        627 :   0.0 :                             X[3] + X[4] + X[5] + X[6] + X[15] - Y[626] :  +Inf :   True
+        628 :   0.0 :                                                               - Y[627] :  +Inf :   True
+        629 :   0.0 :                                                               - Y[628] :  +Inf :   True
+        630 :   0.0 :                                                         X[12] - Y[629] :  +Inf :   True
+        631 :   0.0 :                                                               - Y[630] :  +Inf :   True
+        632 :   0.0 :                                  X[3] + X[12] + X[13] + X[14] - Y[631] :  +Inf :   True
+        633 :   0.0 :                                                               - Y[632] :  +Inf :   True
+        634 :   0.0 :                                  X[5] + X[13] + X[14] + X[15] - Y[633] :  +Inf :   True
+        635 :   0.0 :                                          X[5] + X[13] + X[14] - Y[634] :  +Inf :   True
+        636 :   0.0 :                                                 X[13] + X[15] - Y[635] :  +Inf :   True
+        637 :   0.0 :                                                 X[13] + X[15] - Y[636] :  +Inf :   True
+        638 :   0.0 :                                                               - Y[637] :  +Inf :   True
+        639 :   0.0 :                                                               - Y[638] :  +Inf :   True
+        640 :   0.0 :                                          X[4] + X[13] + X[14] - Y[639] :  +Inf :   True
+        641 :   0.0 :                                                               - Y[640] :  +Inf :   True
+        642 :   0.0 :                                                         X[13] - Y[641] :  +Inf :   True
+        643 :   0.0 :                                                               - Y[642] :  +Inf :   True
+        644 :   0.0 :                                                         X[13] - Y[643] :  +Inf :   True
+        645 :   0.0 :                                                         X[13] - Y[644] :  +Inf :   True
+        646 :   0.0 :                                                 X[13] + X[14] - Y[645] :  +Inf :   True
+        647 :   0.0 :                                                         X[13] - Y[646] :  +Inf :   True
+        648 :   0.0 :                                                          X[6] - Y[647] :  +Inf :   True
+        649 :   0.0 :                                                          X[6] - Y[648] :  +Inf :   True
+        650 :   0.0 :                                    X[4] + X[5] + X[6] + X[15] - Y[649] :  +Inf :   True
+        651 :   0.0 :                                    X[4] + X[5] + X[6] + X[15] - Y[650] :  +Inf :   True
+        652 :   0.0 :                                                         X[10] - Y[651] :  +Inf :   True
+        653 :   0.0 :                                                               - Y[652] :  +Inf :   True
+        654 :   0.0 :                                  X[5] + X[13] + X[14] + X[15] - Y[653] :  +Inf :   True
+        655 :   0.0 :                                                               - Y[654] :  +Inf :   True
+        656 :   0.0 :                                                               - Y[655] :  +Inf :   True
+        657 :   0.0 :                                                         X[15] - Y[656] :  +Inf :   True
+        658 :   0.0 :                                                  X[4] + X[15] - Y[657] :  +Inf :   True
+        659 :   0.0 :                                                 X[13] + X[15] - Y[658] :  +Inf :   True
+        660 :   0.0 :                                                         X[13] - Y[659] :  +Inf :   True
+        661 :   0.0 :                                                               - Y[660] :  +Inf :   True
+        662 :   0.0 :                                                               - Y[661] :  +Inf :   True
+        663 :   0.0 :                                                         X[13] - Y[662] :  +Inf :   True
+        664 :   0.0 :                                         X[13] + X[14] + X[15] - Y[663] :  +Inf :   True
+        665 :   0.0 :                                                         X[13] - Y[664] :  +Inf :   True
+        666 :   0.0 :                                                         X[13] - Y[665] :  +Inf :   True
+        667 :   0.0 :                                                         X[13] - Y[666] :  +Inf :   True
+        668 :   0.0 :                                                          X[6] - Y[667] :  +Inf :   True
+        669 :   0.0 :                                           X[5] + X[6] + X[15] - Y[668] :  +Inf :   True
+        670 :   0.0 :                            X[4] + X[5] + X[6] + X[14] + X[15] - Y[669] :  +Inf :   True
+        671 :   0.0 :                                                          X[3] - Y[670] :  +Inf :   True
+        672 :   0.0 :                                   X[4] + X[5] + X[13] + X[15] - Y[671] :  +Inf :   True
+        673 :   0.0 :                                                 X[13] + X[14] - Y[672] :  +Inf :   True
+        674 :   0.0 :                                          X[5] + X[13] + X[14] - Y[673] :  +Inf :   True
+        675 :   0.0 :                                                         X[15] - Y[674] :  +Inf :   True
+        676 :   0.0 :                                                         X[15] - Y[675] :  +Inf :   True
+        677 :   0.0 :                                         X[13] + X[14] + X[15] - Y[676] :  +Inf :   True
+        678 :   0.0 :                                                         X[13] - Y[677] :  +Inf :   True
+        679 :   0.0 :                                                 X[13] + X[15] - Y[678] :  +Inf :   True
+        680 :   0.0 :                                                               - Y[679] :  +Inf :   True
+        681 :   0.0 :                                                         X[15] - Y[680] :  +Inf :   True
+        682 :   0.0 :                                                          X[5] - Y[681] :  +Inf :   True
+        683 :   0.0 :                                                               - Y[682] :  +Inf :   True
+        684 :   0.0 :                                                         X[13] - Y[683] :  +Inf :   True
+        685 :   0.0 :                                                          X[6] - Y[684] :  +Inf :   True
+        686 :   0.0 :                                                               - Y[685] :  +Inf :   True
+        687 :   0.0 :                                                               - Y[686] :  +Inf :   True
+        688 :   0.0 :                                                               - Y[687] :  +Inf :   True
+        689 :   0.0 :                                                          X[4] - Y[688] :  +Inf :   True
+        690 :   0.0 :                                                         X[13] - Y[689] :  +Inf :   True
+        691 :   0.0 :                                                         X[13] - Y[690] :  +Inf :   True
+        692 :   0.0 :                                                 X[13] + X[15] - Y[691] :  +Inf :   True
+        693 :   0.0 :                                                 X[13] + X[15] - Y[692] :  +Inf :   True
+        694 :   0.0 :                                                 X[13] + X[15] - Y[693] :  +Inf :   True
+        695 :   0.0 :                                                 X[13] + X[15] - Y[694] :  +Inf :   True
+        696 :   0.0 :                                                  X[5] + X[13] - Y[695] :  +Inf :   True
+        697 :   0.0 :                                                  X[6] + X[13] - Y[696] :  +Inf :   True
+        698 :   0.0 :                                                  X[6] + X[13] - Y[697] :  +Inf :   True
+        699 :   0.0 :                                                               - Y[698] :  +Inf :   True
+        700 :   0.0 :                                                               - Y[699] :  +Inf :   True
+        701 :   0.0 :                                                 X[14] + X[15] - Y[700] :  +Inf :   True
+        702 :   0.0 :                                                         X[13] - Y[701] :  +Inf :   True
+        703 :   0.0 :                                                               - Y[702] :  +Inf :   True
+        704 :   0.0 :                                          X[5] + X[13] + X[14] - Y[703] :  +Inf :   True
+        705 :   0.0 :                                                         X[13] - Y[704] :  +Inf :   True
+        706 :   0.0 :                                                               - Y[705] :  +Inf :   True
+        707 :   0.0 :                                                               - Y[706] :  +Inf :   True
+        708 :   0.0 :                                                               - Y[707] :  +Inf :   True
+        709 :   0.0 :                                                               - Y[708] :  +Inf :   True
+        710 :   0.0 :                                         X[13] + X[14] + X[15] - Y[709] :  +Inf :   True
+        711 :   0.0 :                                                               - Y[710] :  +Inf :   True
+        712 :   0.0 :                                                         X[13] - Y[711] :  +Inf :   True
+        713 :   0.0 :                                                  X[5] + X[13] - Y[712] :  +Inf :   True
+        714 :   0.0 :                                                 X[13] + X[14] - Y[713] :  +Inf :   True
+        715 :   0.0 :                                                               - Y[714] :  +Inf :   True
+        716 :   0.0 :                                                         X[13] - Y[715] :  +Inf :   True
+        717 :   0.0 :                                                  X[5] + X[13] - Y[716] :  +Inf :   True
+        718 :   0.0 :                                                               - Y[717] :  +Inf :   True
+        719 :   0.0 :                                                  X[5] + X[13] - Y[718] :  +Inf :   True
+        720 :   0.0 :                                                          X[6] - Y[719] :  +Inf :   True
+        721 :   0.0 :                                                  X[6] + X[13] - Y[720] :  +Inf :   True
+        722 :   0.0 :                                                  X[6] + X[13] - Y[721] :  +Inf :   True
+        723 :   0.0 :                                                               - Y[722] :  +Inf :   True
+        724 :   0.0 :                                                         X[14] - Y[723] :  +Inf :   True
+        725 :   0.0 :                                                         X[15] - Y[724] :  +Inf :   True
+        726 :   0.0 :                                                         X[13] - Y[725] :  +Inf :   True
+        727 :   0.0 :                                          X[5] + X[13] + X[14] - Y[726] :  +Inf :   True
+        728 :   0.0 :                                                         X[13] - Y[727] :  +Inf :   True
+        729 :   0.0 :                                                  X[5] + X[13] - Y[728] :  +Inf :   True
+        730 :   0.0 :                                                          X[6] - Y[729] :  +Inf :   True
+        731 :   0.0 :                                                          X[6] - Y[730] :  +Inf :   True
+        732 :   0.0 :                                                          X[6] - Y[731] :  +Inf :   True
+        733 :   0.0 :                                                         X[13] - Y[732] :  +Inf :   True
+        734 :   0.0 :                                                 X[13] + X[14] - Y[733] :  +Inf :   True
+        735 :   0.0 :                                          X[5] + X[13] + X[14] - Y[734] :  +Inf :   True
+        736 :   0.0 :                                                               - Y[735] :  +Inf :   True
+        737 :   0.0 :                                                               - Y[736] :  +Inf :   True
+        738 :   0.0 :                                                               - Y[737] :  +Inf :   True
+        739 :   0.0 :                                                               - Y[738] :  +Inf :   True
+        740 :   0.0 :                                                               - Y[739] :  +Inf :   True
+        741 :   0.0 :                                                  X[5] + X[13] - Y[740] :  +Inf :   True
+        742 :   0.0 :                                                  X[5] + X[13] - Y[741] :  +Inf :   True
+        743 :   0.0 :                                                         X[13] - Y[742] :  +Inf :   True
+        744 :   0.0 :                                                         X[13] - Y[743] :  +Inf :   True
+        745 :   0.0 :                                                         X[13] - Y[744] :  +Inf :   True
+    c_facility_count : Size=1, Index=None, Active=True
+        Key  : Lower : Body                                                                                                                : Upper : Active
+        None :   8.0 : X[0] + X[1] + X[2] + X[3] + X[4] + X[5] + X[6] + X[7] + X[8] + X[9] + X[10] + X[11] + X[12] + X[13] + X[14] + X[15] :   8.0 :   True
+
+8 Declarations: F D X Y obj c_coverage_index c_coverage c_facility_count

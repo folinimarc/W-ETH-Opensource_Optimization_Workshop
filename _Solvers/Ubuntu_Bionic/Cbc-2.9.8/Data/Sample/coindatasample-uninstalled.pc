@@ -1,0 +1,8 @@
+datadir=/home/mf/Cbc-2.9.8/Data/Sample
+
+Name: Sample
+Description: Sample models
+URL: https://projects.coin-or.org/svn/Data/Sample
+Version: 1.2.10
+Libs:
+Cflags:

@@ -1,0 +1,110 @@
+13 Set Declarations
+    A : Dim=0, Dimen=1, Size=4, Domain=None, Ordered=Insertion, Bounds=None
+        ['thicket', 'pole', 'timber', 'mature_timber']
+    Ax : Dim=0, Dimen=1, Size=3, Domain=None, Ordered=Insertion, Bounds=None
+        ['pole', 'timber', 'mature_timber']
+    P : Dim=0, Dimen=1, Size=4, Domain=None, Ordered=Insertion, Bounds=(0, 3)
+        [0, 1, 2, 3]
+    Px : Dim=0, Dimen=1, Size=3, Domain=None, Ordered=Insertion, Bounds=(0, 2)
+        [0, 1, 2]
+    X_index : Dim=0, Dimen=2, Size=9, Domain=None, Ordered=Insertion, Bounds=None
+        Virtual
+    Y_index : Dim=0, Dimen=2, Size=16, Domain=None, Ordered=Insertion, Bounds=None
+        Virtual
+    c_harvest_smallerthan_area_index : Dim=0, Dimen=1, Size=9, Domain=None, Ordered=False, Bounds=None
+        [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    c_harvested_to_thicket_index : Dim=0, Dimen=1, Size=3, Domain=None, Ordered=False, Bounds=None
+        [1, 2, 3]
+    c_initial_area_index : Dim=0, Dimen=1, Size=4, Domain=None, Ordered=False, Bounds=None
+        [1, 2, 3, 4]
+    c_mature_timber_index : Dim=0, Dimen=1, Size=3, Domain=None, Ordered=False, Bounds=None
+        [1, 2, 3]
+    c_pole_to_timber_index : Dim=0, Dimen=1, Size=3, Domain=None, Ordered=False, Bounds=None
+        [1, 2, 3]
+    c_steady_state_index : Dim=0, Dimen=1, Size=4, Domain=None, Ordered=False, Bounds=None
+        [1, 2, 3, 4]
+    c_thicket_to_pole_index : Dim=0, Dimen=1, Size=3, Domain=None, Ordered=False, Bounds=None
+        [1, 2, 3]
+
+2 Var Declarations
+    X : Size=9, Index=X_index
+        Key                  : Lower : Value : Upper : Fixed : Stale : Domain
+        (0, 'mature_timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+                 (0, 'pole') :     0 :     0 :  None : False : False : NonNegativeIntegers
+               (0, 'timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+        (1, 'mature_timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+                 (1, 'pole') :     0 :     0 :  None : False : False : NonNegativeIntegers
+               (1, 'timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+        (2, 'mature_timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+                 (2, 'pole') :     0 :     0 :  None : False : False : NonNegativeIntegers
+               (2, 'timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+    Y : Size=16, Index=Y_index
+        Key                  : Lower : Value : Upper : Fixed : Stale : Domain
+        (0, 'mature_timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+                 (0, 'pole') :     0 :     0 :  None : False : False : NonNegativeIntegers
+              (0, 'thicket') :     0 :     0 :  None : False : False : NonNegativeIntegers
+               (0, 'timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+        (1, 'mature_timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+                 (1, 'pole') :     0 :     0 :  None : False : False : NonNegativeIntegers
+              (1, 'thicket') :     0 :     0 :  None : False : False : NonNegativeIntegers
+               (1, 'timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+        (2, 'mature_timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+                 (2, 'pole') :     0 :     0 :  None : False : False : NonNegativeIntegers
+              (2, 'thicket') :     0 :     0 :  None : False : False : NonNegativeIntegers
+               (2, 'timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+        (3, 'mature_timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+                 (3, 'pole') :     0 :     0 :  None : False : False : NonNegativeIntegers
+              (3, 'thicket') :     0 :     0 :  None : False : False : NonNegativeIntegers
+               (3, 'timber') :     0 :     0 :  None : False : False : NonNegativeIntegers
+
+1 Objective Declarations
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Sense    : Expression
+        None :   True : maximize : 7500*X[0,pole] + 7500*X[1,pole] + 7500*X[2,pole] + 35000*X[0,timber] + 35000*X[1,timber] + 35000*X[2,timber] + 45000*X[0,mature_timber] + 45000*X[1,mature_timber] + 45000*X[2,mature_timber]
+
+7 Constraint Declarations
+    c_harvest_smallerthan_area : Size=9, Index=c_harvest_smallerthan_area_index, Active=True
+        Key : Lower : Body                                    : Upper : Active
+          1 :   0.0 :                   Y[0,pole] - X[0,pole] :  +Inf :   True
+          2 :   0.0 :                   Y[1,pole] - X[1,pole] :  +Inf :   True
+          3 :   0.0 :                   Y[2,pole] - X[2,pole] :  +Inf :   True
+          4 :   0.0 :               Y[0,timber] - X[0,timber] :  +Inf :   True
+          5 :   0.0 :               Y[1,timber] - X[1,timber] :  +Inf :   True
+          6 :   0.0 :               Y[2,timber] - X[2,timber] :  +Inf :   True
+          7 :   0.0 : Y[0,mature_timber] - X[0,mature_timber] :  +Inf :   True
+          8 :   0.0 : Y[1,mature_timber] - X[1,mature_timber] :  +Inf :   True
+          9 :   0.0 : Y[2,mature_timber] - X[2,mature_timber] :  +Inf :   True
+    c_harvested_to_thicket : Size=3, Index=c_harvested_to_thicket_index, Active=True
+        Key : Lower : Body                                                        : Upper : Active
+          1 :   0.0 : X[0,pole] + X[0,timber] + X[0,mature_timber] - Y[1,thicket] :   0.0 :   True
+          2 :   0.0 : X[1,pole] + X[1,timber] + X[1,mature_timber] - Y[2,thicket] :   0.0 :   True
+          3 :   0.0 : X[2,pole] + X[2,timber] + X[2,mature_timber] - Y[3,thicket] :   0.0 :   True
+    c_initial_area : Size=4, Index=c_initial_area_index, Active=True
+        Key : Lower : Body               : Upper : Active
+          1 : 100.0 :       Y[0,thicket] : 100.0 :   True
+          2 : 200.0 :          Y[0,pole] : 200.0 :   True
+          3 :  50.0 :        Y[0,timber] :  50.0 :   True
+          4 : 150.0 : Y[0,mature_timber] : 150.0 :   True
+    c_mature_timber : Size=3, Index=c_mature_timber_index, Active=True
+        Key : Lower : Body                                                                                     : Upper : Active
+          1 :   0.0 : Y[0,mature_timber] + Y[0,timber] - X[0,mature_timber] - X[0,timber] - Y[1,mature_timber] :   0.0 :   True
+          2 :   0.0 : Y[1,mature_timber] + Y[1,timber] - X[1,mature_timber] - X[1,timber] - Y[2,mature_timber] :   0.0 :   True
+          3 :   0.0 : Y[2,mature_timber] + Y[2,timber] - X[2,mature_timber] - X[2,timber] - Y[3,mature_timber] :   0.0 :   True
+    c_pole_to_timber : Size=3, Index=c_pole_to_timber_index, Active=True
+        Key : Lower : Body                                : Upper : Active
+          1 :   0.0 : Y[0,pole] - X[0,pole] - Y[1,timber] :   0.0 :   True
+          2 :   0.0 : Y[1,pole] - X[1,pole] - Y[2,timber] :   0.0 :   True
+          3 :   0.0 : Y[2,pole] - X[2,pole] - Y[3,timber] :   0.0 :   True
+    c_steady_state : Size=4, Index=c_steady_state_index, Active=True
+        Key : Lower : Body                                    : Upper : Active
+          1 :   0.0 :             Y[3,thicket] - Y[2,thicket] :   0.0 :   True
+          2 :   0.0 :                   Y[3,pole] - Y[2,pole] :   0.0 :   True
+          3 :   0.0 :               Y[3,timber] - Y[2,timber] :   0.0 :   True
+          4 :   0.0 : Y[3,mature_timber] - Y[2,mature_timber] :   0.0 :   True
+    c_thicket_to_pole : Size=3, Index=c_thicket_to_pole_index, Active=True
+        Key : Lower : Body                     : Upper : Active
+          1 :   0.0 : Y[0,thicket] - Y[1,pole] :   0.0 :   True
+          2 :   0.0 : Y[1,thicket] - Y[2,pole] :   0.0 :   True
+          3 :   0.0 : Y[2,thicket] - Y[3,pole] :   0.0 :   True
+
+23 Declarations: P Px A Ax X_index X Y_index Y obj c_initial_area_index c_initial_area c_harvest_smallerthan_area_index c_harvest_smallerthan_area c_steady_state_index c_steady_state c_harvested_to_thicket_index c_harvested_to_thicket c_thicket_to_pole_index c_thicket_to_pole c_pole_to_timber_index c_pole_to_timber c_mature_timber_index c_mature_timber

@@ -1,0 +1,137 @@
+Solver command line: ['C:\\Users\\mfolini\\Dropbox\\DATA\\Arbeit\\ETH\\Opensource_Optimization_Workshop\\_Solvers\\Cbc-2.9.9-win32-msvc14\\bin\\cbc.exe', '-printingOptions', 'all', '-import', 'C:\\Users\\mfolini\\Dropbox\\DATA\\Arbeit\\ETH\\Opensource_Optimization_Workshop\\06_HarvestScheduling\\tmp7l_5n0dj.pyomo.lp', '-stat=1', '-solve', '-solu', 'C:\\Users\\mfolini\\Dropbox\\DATA\\Arbeit\\ETH\\Opensource_Optimization_Workshop\\06_HarvestScheduling\\tmp7l_5n0dj.pyomo.soln']
+
+Welcome to the CBC MILP Solver 
+
+Version: 2.9.9 
+
+Build Date: Jun 12 2017 
+
+
+
+command line - C:\Users\mfolini\Dropbox\DATA\Arbeit\ETH\Opensource_Optimization_Workshop\_Solvers\Cbc-2.9.9-win32-msvc14\bin\cbc.exe -printingOptions all -import C:\Users\mfolini\Dropbox\DATA\Arbeit\ETH\Opensource_Optimization_Workshop\06_HarvestScheduling\tmp7l_5n0dj.pyomo.lp -stat=1 -solve -solu C:\Users\mfolini\Dropbox\DATA\Arbeit\ETH\Opensource_Optimization_Workshop\06_HarvestScheduling\tmp7l_5n0dj.pyomo.soln (default strategy 1)
+
+Option for printingOptions changed from normal to all
+
+ CoinLpIO::readLp(): Maximization problem reformulated as minimization
+
+Presolve is modifying 4 integer bounds and re-presolving
+
+Presolve 6 (-24) rows, 9 (-17) columns and 26 (-47) elements
+
+Statistics for presolved model
+
+Original problem has 25 integers (0 of which binary)
+
+Presolved problem has 9 integers (0 of which binary)
+
+==== 0 zero objective 3 different
+
+3 variables have objective of -45000
+
+3 variables have objective of -35000
+
+3 variables have objective of -7500
+
+==== absolute objective values 3 different
+
+3 variables have objective of 7500
+
+3 variables have objective of 35000
+
+3 variables have objective of 45000
+
+==== for integers 0 zero objective 3 different
+
+3 variables have objective of -45000
+
+3 variables have objective of -35000
+
+3 variables have objective of -7500
+
+==== for integers absolute objective values 3 different
+
+3 variables have objective of 7500
+
+3 variables have objective of 35000
+
+3 variables have objective of 45000
+
+===== end objective counts
+
+
+
+
+
+Problem has 6 rows, 9 columns (9 with objective) and 26 elements
+
+Column breakdown:
+
+5 of type 0.0->inf, 4 of type 0.0->up, 0 of type lo->inf, 
+
+0 of type lo->up, 0 of type free, 0 of type fixed, 
+
+0 of type -inf->0.0, 0 of type -inf->up, 0 of type 0.0->1.0 
+
+Row breakdown:
+
+2 of type E 0.0, 0 of type E 1.0, 0 of type E -1.0, 
+
+1 of type E other, 0 of type G 0.0, 0 of type G 1.0, 
+
+3 of type G other, 0 of type L 0.0, 0 of type L 1.0, 
+
+0 of type L other, 0 of type Range 0.0->1.0, 0 of type Range other, 
+
+0 of type Free 
+
+Continuous objective value is -1.975e+07 - 0.03 seconds
+
+Cgl0004I processed model has 6 rows, 9 columns (9 integer (0 of which binary)) and 26 elements
+
+Cutoff increment increased from 1e-05 to 2500
+
+Cbc0012I Integer solution of -19750000 found by DiveCoefficient after 0 iterations and 0 nodes (0.05 seconds)
+
+Cbc0001I Search completed - best objective -19750000, took 0 iterations and 0 nodes (0.05 seconds)
+
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+
+Cuts at root node changed objective from -1.975e+07 to -1.975e+07
+
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+
+
+Result - Optimal solution found
+
+
+
+Objective value:                -19750000.00000000
+
+Enumerated nodes:               0
+
+Total iterations:               0
+
+Time (CPU seconds):             0.05
+
+Time (Wallclock seconds):       0.05
+
+
+
+Total time (CPU seconds):       0.06   (Wallclock seconds):       0.06
+
+
+
+

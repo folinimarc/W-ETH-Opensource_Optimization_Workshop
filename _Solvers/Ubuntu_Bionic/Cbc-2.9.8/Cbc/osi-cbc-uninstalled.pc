@@ -1,0 +1,10 @@
+prefix=/home/mf/Cbc-2.9.8
+libdir=/home/mf/Cbc-2.9.8/Cbc/src/OsiCbc
+
+Name: OsiCbc
+Description: COIN-OR Open Solver Interface for CBC
+URL: https://projects.coin-or.org/Osi
+Version: 2.9.8
+Libs: ${libdir}/libOsiCbc.la
+Cflags: -I/home/mf/Cbc-2.9.8/Cbc/src/OsiCbc
+Requires: cbc

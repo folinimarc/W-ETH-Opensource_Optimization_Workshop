@@ -1,0 +1,76 @@
+Solver command line: ['/home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/_Solvers/Ubuntu_Bionic/Cbc-2.9.8/bin/cbc', '-printingOptions', 'all', '-import', '/home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/05_SetCover/tmp34viiy1h.pyomo.lp', '-stat=1', '-solve', '-solu', '/home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/05_SetCover/tmp34viiy1h.pyomo.soln']
+
+Welcome to the CBC MILP Solver 
+Version: 2.9.8 
+Build Date: Oct 29 2018 
+Revision Number: 2404 
+
+command line - /home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/_Solvers/Ubuntu_Bionic/Cbc-2.9.8/bin/cbc -printingOptions all -import /home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/05_SetCover/tmp34viiy1h.pyomo.lp -stat=1 -solve -solu /home/mf/Dropbox/DATA/Arbeit/ETH/Opensource_Optimization_Workshop/05_SetCover/tmp34viiy1h.pyomo.soln (default strategy 1)
+Option for printingOptions changed from normal to all
+ CoinLpIO::readLp(): Maximization problem reformulated as minimization
+Presolve 365 (-382) rows, 380 (-382) columns and 1181 (-382) elements
+Statistics for presolved model
+Original problem has 761 integers (761 of which binary)
+Presolved problem has 380 integers (380 of which binary)
+==== 16 zero objective 3 different
+125 variables have objective of -2
+239 variables have objective of -1
+16 variables have objective of 0
+==== absolute objective values 3 different
+16 variables have objective of 0
+239 variables have objective of 1
+125 variables have objective of 2
+==== for integers 16 zero objective 3 different
+125 variables have objective of -2
+239 variables have objective of -1
+16 variables have objective of 0
+==== for integers absolute objective values 3 different
+16 variables have objective of 0
+239 variables have objective of 1
+125 variables have objective of 2
+===== end objective counts
+
+
+Problem has 365 rows, 380 columns (364 with objective) and 1181 elements
+There are 364 singletons with objective 
+Column breakdown:
+0 of type 0.0->inf, 0 of type 0.0->up, 0 of type lo->inf, 
+0 of type lo->up, 0 of type free, 0 of type fixed, 
+0 of type -inf->0.0, 0 of type -inf->up, 380 of type 0.0->1.0 
+Row breakdown:
+0 of type E 0.0, 0 of type E 1.0, 0 of type E -1.0, 
+1 of type E other, 364 of type G 0.0, 0 of type G 1.0, 
+0 of type G other, 0 of type L 0.0, 0 of type L 1.0, 
+0 of type L other, 0 of type Range 0.0->1.0, 0 of type Range other, 
+0 of type Free 
+Continuous objective value is -437 - 0.01 seconds
+Cgl0004I processed model has 365 rows, 380 columns (380 integer (380 of which binary)) and 1181 elements
+Cutoff increment increased from 1e-05 to 0.9999
+Cbc0038I Initial state - 0 integers unsatisfied sum - 0
+Cbc0038I Solution found of -437
+Cbc0038I Before mini branch and bound, 380 integers at bound fixed and 0 continuous
+Cbc0038I Mini branch and bound did not improve solution (0.02 seconds)
+Cbc0038I After 0.02 seconds - Feasibility pump exiting with objective of -437 - took 0.00 seconds
+Cbc0012I Integer solution of -437 found by feasibility pump after 0 iterations and 0 nodes (0.02 seconds)
+Cbc0001I Search completed - best objective -437, took 0 iterations and 0 nodes (0.02 seconds)
+Cbc0035I Maximum depth 0, 0 variables fixed on reduced cost
+Cuts at root node changed objective from -437 to -437
+Probing was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Gomory was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Knapsack was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+Clique was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+MixedIntegerRounding2 was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+FlowCover was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+TwoMirCuts was tried 0 times and created 0 cuts of which 0 were active after adding rounds of cuts (0.000 seconds)
+
+Result - Optimal solution found
+
+Objective value:                -437.00000000
+Enumerated nodes:               0
+Total iterations:               0
+Time (CPU seconds):             0.02
+Time (Wallclock seconds):       0.03
+
+Total time (CPU seconds):       0.03   (Wallclock seconds):       0.03
+
+

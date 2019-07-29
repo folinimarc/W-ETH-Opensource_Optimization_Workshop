@@ -1,0 +1,10 @@
+prefix=/home/mf/Cbc-2.9.8
+libdir=/home/mf/Cbc-2.9.8/CoinUtils/src
+
+Name: CoinUtils
+Description: COIN-OR Utilities
+URL: https://projects.coin-or.org/CoinUtils
+Version: 2.10.13
+Libs: ${libdir}/libCoinUtils.la -lm 
+Cflags: -I/home/mf/Cbc-2.9.8/CoinUtils/src -I/home/mf/Cbc-2.9.8/CoinUtils/src
+Requires: 

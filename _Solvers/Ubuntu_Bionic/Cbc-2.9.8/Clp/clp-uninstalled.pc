@@ -1,0 +1,10 @@
+prefix=/home/mf/Cbc-2.9.8
+libdir=/home/mf/Cbc-2.9.8/Clp/src
+
+Name: CLP
+Description: COIN-OR Linear Programming Solver
+URL: https://projects.coin-or.org/Clp
+Version: 1.16.10
+Libs: ${libdir}/libClpSolver.la ${libdir}/libClp.la 
+Cflags: -I/home/mf/Cbc-2.9.8/Clp/src -I/home/mf/Cbc-2.9.8/Clp/src
+Requires: coinutils 

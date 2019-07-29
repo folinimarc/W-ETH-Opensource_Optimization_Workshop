@@ -1,0 +1,27 @@
+2 Set Declarations
+    C : Dim=0, Dimen=1, Size=2, Domain=None, Ordered=False, Bounds=None
+        ['carrots', 'grain']
+    c_max_subsidized_area_index : Dim=0, Dimen=1, Size=2, Domain=None, Ordered=False, Bounds=None
+        [1, 2]
+
+1 Var Declarations
+    X : Size=2, Index=C
+        Key     : Lower : Value : Upper : Fixed : Stale : Domain
+        carrots :     0 :     0 :  None : False : False : NonNegativeReals
+          grain :     0 :     0 :  None : False : False : NonNegativeReals
+
+1 Objective Declarations
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Sense    : Expression
+        None :   True : maximize : 8000*X[grain] + 5000*X[carrots]
+
+2 Constraint Declarations
+    c_max_subsidized_area : Size=2, Index=c_max_subsidized_area_index, Active=True
+        Key : Lower : Body       : Upper : Active
+          1 :  -Inf :   X[grain] :   4.5 :   True
+          2 :  -Inf : X[carrots] :   7.0 :   True
+    c_total_available_area : Size=1, Index=None, Active=True
+        Key  : Lower : Body                  : Upper : Active
+        None :  -Inf : X[grain] + X[carrots] :   9.0 :   True
+
+6 Declarations: C X obj c_total_available_area c_max_subsidized_area_index c_max_subsidized_area

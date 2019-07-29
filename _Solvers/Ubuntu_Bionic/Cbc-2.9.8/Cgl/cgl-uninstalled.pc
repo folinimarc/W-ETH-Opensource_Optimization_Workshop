@@ -1,0 +1,10 @@
+prefix=/home/mf/Cbc-2.9.8
+libdir=/home/mf/Cbc-2.9.8/Cgl/src
+
+Name: CGL
+Description: COIN-OR Cut Generation Library
+URL: https://projects.coin-or.org/Cgl
+Version: 0.59.9
+Libs: ${libdir}/libCgl.la 
+Cflags: -I/home/mf/Cbc-2.9.8/Cgl/src -I/home/mf/Cbc-2.9.8/Cgl/src/CglAllDifferent -I/home/mf/Cbc-2.9.8/Cgl/src/CglClique -I/home/mf/Cbc-2.9.8/Cgl/src/CglDuplicateRow -I/home/mf/Cbc-2.9.8/Cgl/src/CglFlowCover -I/home/mf/Cbc-2.9.8/Cgl/src/CglGMI -I/home/mf/Cbc-2.9.8/Cgl/src/CglGomory -I/home/mf/Cbc-2.9.8/Cgl/src/CglKnapsackCover -I/home/mf/Cbc-2.9.8/Cgl/src/CglLandP -I/home/mf/Cbc-2.9.8/Cgl/src/CglLiftAndProject -I/home/mf/Cbc-2.9.8/Cgl/src/CglMixedIntegerRounding -I/home/mf/Cbc-2.9.8/Cgl/src/CglMixedIntegerRounding2 -I/home/mf/Cbc-2.9.8/Cgl/src/CglOddHole -I/home/mf/Cbc-2.9.8/Cgl/src/CglPreProcess -I/home/mf/Cbc-2.9.8/Cgl/src/CglProbing -I/home/mf/Cbc-2.9.8/Cgl/src/CglRedSplit -I/home/mf/Cbc-2.9.8/Cgl/src/CglRedSplit2 -I/home/mf/Cbc-2.9.8/Cgl/src/CglResidualCapacity -I/home/mf/Cbc-2.9.8/Cgl/src/CglSimpleRounding -I/home/mf/Cbc-2.9.8/Cgl/src/CglTwomir -I/home/mf/Cbc-2.9.8/Cgl/src/CglZeroHalf -I/home/mf/Cbc-2.9.8/Cgl/src
+Requires: osi-clp osi coinutils 
